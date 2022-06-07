@@ -1,5 +1,4 @@
 <?php
-
 namespace Wcracker\UmengOpenAPI;
 
 class Common

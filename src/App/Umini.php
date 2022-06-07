@@ -29,8 +29,4 @@ class Umini extends AbstractApplication
         $className = "\\Wcracker\\UmengOpenAPI\\com\\umeng\\umini\\param\\UmengUmini{$apiName}Result";
         return new $className();
     }
-
-    public function test() {
-        var_dump(is_(new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists('abc', ['abc' => 1]));
-    }
 }
