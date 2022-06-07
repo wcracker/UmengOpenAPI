@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappVersionInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappVersionInfo;
 
 class UmengUappGetVersionDataResult
 {
@@ -34,7 +34,7 @@ class UmengUappGetVersionDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("versionInfos", $this->stdResult)) {
+        if (is_array_key_exists("versionInfos", $this->stdResult)) {
             $versionInfosResult=$this->stdResult->{"versionInfos"};
             $object = json_decode(json_encode($versionInfosResult), true);
             $this->versionInfos = array();
@@ -51,7 +51,7 @@ class UmengUappGetVersionDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("versionInfos", $this->arrayResult)) {
+        if (is_array_key_exists("versionInfos", $this->arrayResult)) {
             $versionInfosResult=$arrayResult['versionInfos'];
             $this->versionInfos = new UmengUappVersionInfo();
             $this->versionInfos->setStdResult($versionInfosResult);

@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappCountData;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappCountData;
 
 class UmengUappGetLaunchesByChannelOrVersionResult
 {
@@ -34,7 +34,7 @@ class UmengUappGetLaunchesByChannelOrVersionResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("launchInfo", $this->stdResult)) {
+        if (is_array_key_exists("launchInfo", $this->stdResult)) {
             $launchInfoResult=$this->stdResult->{"launchInfo"};
             $object = json_decode(json_encode($launchInfoResult), true);
             $this->launchInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetLaunchesByChannelOrVersionResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("launchInfo", $this->arrayResult)) {
+        if (is_array_key_exists("launchInfo", $this->arrayResult)) {
             $launchInfoResult=$arrayResult['launchInfo'];
             $this->launchInfo = new UmengUappCountData();
             $this->launchInfo->setStdResult($launchInfoResult);

@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappAllAppData;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappAllAppData;
 
 class UmengUappGetAllAppDataResult
 {
@@ -34,7 +34,7 @@ class UmengUappGetAllAppDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("allAppData", $this->stdResult)) {
+        if (is_array_key_exists("allAppData", $this->stdResult)) {
             $allAppDataResult=$this->stdResult->{"allAppData"};
             $object = json_decode(json_encode($allAppDataResult), true);
             $this->allAppData = array();
@@ -51,7 +51,7 @@ class UmengUappGetAllAppDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("allAppData", $this->arrayResult)) {
+        if (is_array_key_exists("allAppData", $this->arrayResult)) {
             $allAppDataResult=$arrayResult['allAppData'];
             $this->allAppData = new UmengUappAllAppData();
             $this->allAppData->setStdResult($allAppDataResult);

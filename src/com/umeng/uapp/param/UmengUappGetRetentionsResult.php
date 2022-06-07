@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappRetentionInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappRetentionInfo;
 
 class UmengUappGetRetentionsResult
 {
@@ -34,7 +34,7 @@ class UmengUappGetRetentionsResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("retentionInfo", $this->stdResult)) {
+        if (is_array_key_exists("retentionInfo", $this->stdResult)) {
             $retentionInfoResult=$this->stdResult->{"retentionInfo"};
             $object = json_decode(json_encode($retentionInfoResult), true);
             $this->retentionInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetRetentionsResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("retentionInfo", $this->arrayResult)) {
+        if (is_array_key_exists("retentionInfo", $this->arrayResult)) {
             $retentionInfoResult=$arrayResult['retentionInfo'];
             $this->retentionInfo = new UmengUappRetentionInfo();
             $this->retentionInfo->setStdResult($retentionInfoResult);

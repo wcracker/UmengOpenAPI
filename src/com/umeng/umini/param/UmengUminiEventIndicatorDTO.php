@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUminiEventIndicatorDTO extends SDKDomain
 {
@@ -74,13 +74,13 @@ class UmengUminiEventIndicatorDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("dateTime", $this->stdResult)) {
+        if (is_array_key_exists("dateTime", $this->stdResult)) {
             $this->dateTime = $this->stdResult->{"dateTime"};
         }
-        if (array_key_exists("count", $this->stdResult)) {
+        if (is_array_key_exists("count", $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (array_key_exists("device", $this->stdResult)) {
+        if (is_array_key_exists("device", $this->stdResult)) {
             $this->device = $this->stdResult->{"device"};
         }
     }
@@ -89,13 +89,13 @@ class UmengUminiEventIndicatorDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("dateTime", $this->arrayResult)) {
+        if (is_array_key_exists("dateTime", $this->arrayResult)) {
             $this->dateTime = $arrayResult['dateTime'];
         }
-        if (array_key_exists("count", $this->arrayResult)) {
+        if (is_array_key_exists("count", $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (array_key_exists("device", $this->arrayResult)) {
+        if (is_array_key_exists("device", $this->arrayResult)) {
             $this->device = $arrayResult['device'];
         }
     }

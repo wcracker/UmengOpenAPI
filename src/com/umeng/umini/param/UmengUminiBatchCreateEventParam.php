@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\umini\param\UmengUminiEventDTO;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\umini\param\UmengUminiEventDTO;
 
 class UmengUminiBatchCreateEventParam
 {

@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\apptrack\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\apptrack\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengApptrackGetRegisterLoginDataResult
 {
@@ -158,25 +158,25 @@ class UmengApptrackGetRegisterLoginDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("register", $this->stdResult)) {
+        if (is_array_key_exists("register", $this->stdResult)) {
             $this->register = $this->stdResult->{"register"};
         }
-        if (array_key_exists("login", $this->stdResult)) {
+        if (is_array_key_exists("login", $this->stdResult)) {
             $this->login = $this->stdResult->{"login"};
         }
-        if (array_key_exists("roleDevice", $this->stdResult)) {
+        if (is_array_key_exists("roleDevice", $this->stdResult)) {
             $this->roleDevice = $this->stdResult->{"roleDevice"};
         }
-        if (array_key_exists("orderDevice", $this->stdResult)) {
+        if (is_array_key_exists("orderDevice", $this->stdResult)) {
             $this->orderDevice = $this->stdResult->{"orderDevice"};
         }
-        if (array_key_exists("orderAmount", $this->stdResult)) {
+        if (is_array_key_exists("orderAmount", $this->stdResult)) {
             $this->orderAmount = $this->stdResult->{"orderAmount"};
         }
-        if (array_key_exists("payDevice", $this->stdResult)) {
+        if (is_array_key_exists("payDevice", $this->stdResult)) {
             $this->payDevice = $this->stdResult->{"payDevice"};
         }
-        if (array_key_exists("amount", $this->stdResult)) {
+        if (is_array_key_exists("amount", $this->stdResult)) {
             $this->amount = $this->stdResult->{"amount"};
         }
     }
@@ -185,25 +185,25 @@ class UmengApptrackGetRegisterLoginDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("register", $this->arrayResult)) {
+        if (is_array_key_exists("register", $this->arrayResult)) {
             $this->register = $arrayResult['register'];
         }
-        if (array_key_exists("login", $this->arrayResult)) {
+        if (is_array_key_exists("login", $this->arrayResult)) {
             $this->login = $arrayResult['login'];
         }
-        if (array_key_exists("roleDevice", $this->arrayResult)) {
+        if (is_array_key_exists("roleDevice", $this->arrayResult)) {
             $this->roleDevice = $arrayResult['roleDevice'];
         }
-        if (array_key_exists("orderDevice", $this->arrayResult)) {
+        if (is_array_key_exists("orderDevice", $this->arrayResult)) {
             $this->orderDevice = $arrayResult['orderDevice'];
         }
-        if (array_key_exists("orderAmount", $this->arrayResult)) {
+        if (is_array_key_exists("orderAmount", $this->arrayResult)) {
             $this->orderAmount = $arrayResult['orderAmount'];
         }
-        if (array_key_exists("payDevice", $this->arrayResult)) {
+        if (is_array_key_exists("payDevice", $this->arrayResult)) {
             $this->payDevice = $arrayResult['payDevice'];
         }
-        if (array_key_exists("amount", $this->arrayResult)) {
+        if (is_array_key_exists("amount", $this->arrayResult)) {
             $this->amount = $arrayResult['amount'];
         }
     }

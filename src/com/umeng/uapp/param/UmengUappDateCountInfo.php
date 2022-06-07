@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappDateCountInfo extends SDKDomain
 {
@@ -53,10 +53,10 @@ class UmengUappDateCountInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("dates", $this->stdResult)) {
+        if (is_array_key_exists("dates", $this->stdResult)) {
             $this->dates = $this->stdResult->{"dates"};
         }
-        if (array_key_exists("data", $this->stdResult)) {
+        if (is_array_key_exists("data", $this->stdResult)) {
             $this->data = $this->stdResult->{"data"};
         }
     }
@@ -65,10 +65,10 @@ class UmengUappDateCountInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("dates", $this->arrayResult)) {
+        if (is_array_key_exists("dates", $this->arrayResult)) {
             $this->dates = $arrayResult['dates'];
         }
-        if (array_key_exists("data", $this->arrayResult)) {
+        if (is_array_key_exists("data", $this->arrayResult)) {
             $this->data = $arrayResult['data'];
         }
     }

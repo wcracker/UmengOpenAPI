@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
+namespace Wcracker\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class ExampleHouse extends SDKDomain
 {
@@ -102,16 +102,16 @@ class ExampleHouse extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("location", $this->stdResult)) {
+        if (is_array_key_exists("location", $this->stdResult)) {
             $this->location = $this->stdResult->{"location"};
         }
-        if (array_key_exists("areaSize", $this->stdResult)) {
+        if (is_array_key_exists("areaSize", $this->stdResult)) {
             $this->areaSize = $this->stdResult->{"areaSize"};
         }
-        if (array_key_exists("rent", $this->stdResult)) {
+        if (is_array_key_exists("rent", $this->stdResult)) {
             $this->rent = $this->stdResult->{"rent"};
         }
-        if (array_key_exists("rooms", $this->stdResult)) {
+        if (is_array_key_exists("rooms", $this->stdResult)) {
             $this->rooms = $this->stdResult->{"rooms"};
         }
     }
@@ -119,16 +119,16 @@ class ExampleHouse extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("location", $this->arrayResult)) {
+        if (is_array_key_exists("location", $this->arrayResult)) {
             $this->location = $arrayResult ['location'];
         }
-        if (array_key_exists("areaSize", $this->arrayResult)) {
+        if (is_array_key_exists("areaSize", $this->arrayResult)) {
             $this->areaSize = $arrayResult ['areaSize'];
         }
-        if (array_key_exists("rent", $this->arrayResult)) {
+        if (is_array_key_exists("rent", $this->arrayResult)) {
             $this->rent = $arrayResult ['rent'];
         }
-        if (array_key_exists("rooms", $this->arrayResult)) {
+        if (is_array_key_exists("rooms", $this->arrayResult)) {
             $this->rooms = $arrayResult ['rooms'];
         }
     }

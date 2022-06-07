@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappChannelInfo extends SDKDomain
 {
@@ -200,31 +200,31 @@ class UmengUappChannelInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("launch", $this->stdResult)) {
+        if (is_array_key_exists("launch", $this->stdResult)) {
             $this->launch = $this->stdResult->{"launch"};
         }
-        if (array_key_exists("duration", $this->stdResult)) {
+        if (is_array_key_exists("duration", $this->stdResult)) {
             $this->duration = $this->stdResult->{"duration"};
         }
-        if (array_key_exists("date", $this->stdResult)) {
+        if (is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (array_key_exists("totalUserRate", $this->stdResult)) {
+        if (is_array_key_exists("totalUserRate", $this->stdResult)) {
             $this->totalUserRate = $this->stdResult->{"totalUserRate"};
         }
-        if (array_key_exists("activeUser", $this->stdResult)) {
+        if (is_array_key_exists("activeUser", $this->stdResult)) {
             $this->activeUser = $this->stdResult->{"activeUser"};
         }
-        if (array_key_exists("newUser", $this->stdResult)) {
+        if (is_array_key_exists("newUser", $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (array_key_exists("totalUser", $this->stdResult)) {
+        if (is_array_key_exists("totalUser", $this->stdResult)) {
             $this->totalUser = $this->stdResult->{"totalUser"};
         }
-        if (array_key_exists("channel", $this->stdResult)) {
+        if (is_array_key_exists("channel", $this->stdResult)) {
             $this->channel = $this->stdResult->{"channel"};
         }
-        if (array_key_exists("id", $this->stdResult)) {
+        if (is_array_key_exists("id", $this->stdResult)) {
             $this->id = $this->stdResult->{"id"};
         }
     }
@@ -233,31 +233,31 @@ class UmengUappChannelInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("launch", $this->arrayResult)) {
+        if (is_array_key_exists("launch", $this->arrayResult)) {
             $this->launch = $arrayResult['launch'];
         }
-        if (array_key_exists("duration", $this->arrayResult)) {
+        if (is_array_key_exists("duration", $this->arrayResult)) {
             $this->duration = $arrayResult['duration'];
         }
-        if (array_key_exists("date", $this->arrayResult)) {
+        if (is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (array_key_exists("totalUserRate", $this->arrayResult)) {
+        if (is_array_key_exists("totalUserRate", $this->arrayResult)) {
             $this->totalUserRate = $arrayResult['totalUserRate'];
         }
-        if (array_key_exists("activeUser", $this->arrayResult)) {
+        if (is_array_key_exists("activeUser", $this->arrayResult)) {
             $this->activeUser = $arrayResult['activeUser'];
         }
-        if (array_key_exists("newUser", $this->arrayResult)) {
+        if (is_array_key_exists("newUser", $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (array_key_exists("totalUser", $this->arrayResult)) {
+        if (is_array_key_exists("totalUser", $this->arrayResult)) {
             $this->totalUser = $arrayResult['totalUser'];
         }
-        if (array_key_exists("channel", $this->arrayResult)) {
+        if (is_array_key_exists("channel", $this->arrayResult)) {
             $this->channel = $arrayResult['channel'];
         }
-        if (array_key_exists("id", $this->arrayResult)) {
+        if (is_array_key_exists("id", $this->arrayResult)) {
             $this->id = $arrayResult['id'];
         }
     }

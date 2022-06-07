@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
+namespace Wcracker\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class ExampleCar extends SDKDomain
 {
@@ -171,25 +171,25 @@ class ExampleCar extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("builtDate", $this->stdResult)) {
+        if (is_array_key_exists("builtDate", $this->stdResult)) {
             $this->builtDate = $this->stdResult->{"builtDate"};
         }
-        if (array_key_exists("boughtDate", $this->stdResult)) {
+        if (is_array_key_exists("boughtDate", $this->stdResult)) {
             $this->boughtDate = $this->stdResult->{"boughtDate"};
         }
-        if (array_key_exists("name", $this->stdResult)) {
+        if (is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (array_key_exists("builtArea", $this->stdResult)) {
+        if (is_array_key_exists("builtArea", $this->stdResult)) {
             $this->builtArea = $this->stdResult->{"builtArea"};
         }
-        if (array_key_exists("carNumber", $this->stdResult)) {
+        if (is_array_key_exists("carNumber", $this->stdResult)) {
             $this->carNumber = $this->stdResult->{"carNumber"};
         }
-        if (array_key_exists("price", $this->stdResult)) {
+        if (is_array_key_exists("price", $this->stdResult)) {
             $this->price = $this->stdResult->{"price"};
         }
-        if (array_key_exists("seats", $this->stdResult)) {
+        if (is_array_key_exists("seats", $this->stdResult)) {
             $this->seats = $this->stdResult->{"seats"};
         }
     }
@@ -197,25 +197,25 @@ class ExampleCar extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("builtDate", $this->arrayResult)) {
+        if (is_array_key_exists("builtDate", $this->arrayResult)) {
             $this->builtDate = $arrayResult ['builtDate'];
         }
-        if (array_key_exists("boughtDate", $this->arrayResult)) {
+        if (is_array_key_exists("boughtDate", $this->arrayResult)) {
             $this->boughtDate = $arrayResult ['boughtDate'];
         }
-        if (array_key_exists("name", $this->arrayResult)) {
+        if (is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult ['name'];
         }
-        if (array_key_exists("builtArea", $this->arrayResult)) {
+        if (is_array_key_exists("builtArea", $this->arrayResult)) {
             $this->builtArea = $arrayResult ['builtArea'];
         }
-        if (array_key_exists("carNumber", $this->arrayResult)) {
+        if (is_array_key_exists("carNumber", $this->arrayResult)) {
             $this->carNumber = $arrayResult ['carNumber'];
         }
-        if (array_key_exists("price", $this->arrayResult)) {
+        if (is_array_key_exists("price", $this->arrayResult)) {
             $this->price = $arrayResult ['price'];
         }
-        if (array_key_exists("seats", $this->arrayResult)) {
+        if (is_array_key_exists("seats", $this->arrayResult)) {
             $this->seats = $arrayResult ['seats'];
         }
     }

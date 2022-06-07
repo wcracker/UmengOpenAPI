@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappParamInfo extends SDKDomain
 {
@@ -74,13 +74,13 @@ class UmengUappParamInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("paramId", $this->stdResult)) {
+        if (is_array_key_exists("paramId", $this->stdResult)) {
             $this->paramId = $this->stdResult->{"paramId"};
         }
-        if (array_key_exists("name", $this->stdResult)) {
+        if (is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (array_key_exists("displayName", $this->stdResult)) {
+        if (is_array_key_exists("displayName", $this->stdResult)) {
             $this->displayName = $this->stdResult->{"displayName"};
         }
     }
@@ -89,13 +89,13 @@ class UmengUappParamInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("paramId", $this->arrayResult)) {
+        if (is_array_key_exists("paramId", $this->arrayResult)) {
             $this->paramId = $arrayResult['paramId'];
         }
-        if (array_key_exists("name", $this->arrayResult)) {
+        if (is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult['name'];
         }
-        if (array_key_exists("displayName", $this->arrayResult)) {
+        if (is_array_key_exists("displayName", $this->arrayResult)) {
             $this->displayName = $arrayResult['displayName'];
         }
     }

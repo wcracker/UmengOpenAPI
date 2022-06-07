@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\umini\param\UmengUminiPropertyValueCountDTO;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\umini\param\UmengUminiPropertyValueCountDTO;
 
 class UmengUminiAllPropertyValueCountDTO extends SDKDomain
 {
@@ -76,13 +76,13 @@ class UmengUminiAllPropertyValueCountDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("currentPage", $this->stdResult)) {
+        if (is_array_key_exists("currentPage", $this->stdResult)) {
             $this->currentPage = $this->stdResult->{"currentPage"};
         }
-        if (array_key_exists("totalCount", $this->stdResult)) {
+        if (is_array_key_exists("totalCount", $this->stdResult)) {
             $this->totalCount = $this->stdResult->{"totalCount"};
         }
-        if (array_key_exists("data", $this->stdResult)) {
+        if (is_array_key_exists("data", $this->stdResult)) {
             $dataResult=$this->stdResult->{"data"};
             $object = json_decode(json_encode($dataResult), true);
             $this->data = array();
@@ -99,13 +99,13 @@ class UmengUminiAllPropertyValueCountDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("currentPage", $this->arrayResult)) {
+        if (is_array_key_exists("currentPage", $this->arrayResult)) {
             $this->currentPage = $arrayResult['currentPage'];
         }
-        if (array_key_exists("totalCount", $this->arrayResult)) {
+        if (is_array_key_exists("totalCount", $this->arrayResult)) {
             $this->totalCount = $arrayResult['totalCount'];
         }
-        if (array_key_exists("data", $this->arrayResult)) {
+        if (is_array_key_exists("data", $this->arrayResult)) {
             $dataResult=$arrayResult['data'];
             $this->data = new UmengUminiPropertyValueCountDTO();
             $this->data->setStdResult($dataResult);

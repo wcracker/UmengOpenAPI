@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappCountDataNameValue;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappCountDataNameValue;
 
 class UmengUappCountData extends SDKDomain
 {
@@ -97,10 +97,10 @@ class UmengUappCountData extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("date", $this->stdResult)) {
+        if (is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (array_key_exists("dailyValue", $this->stdResult)) {
+        if (is_array_key_exists("dailyValue", $this->stdResult)) {
             $dailyValueResult=$this->stdResult->{"dailyValue"};
             $object = json_decode(json_encode($dailyValueResult), true);
             $this->dailyValue = array();
@@ -111,10 +111,10 @@ class UmengUappCountData extends SDKDomain
                 $this->dailyValue [$i] = $UmengUappCountDataNameValueResult;
             }
         }
-        if (array_key_exists("hourValue", $this->stdResult)) {
+        if (is_array_key_exists("hourValue", $this->stdResult)) {
             $this->hourValue = $this->stdResult->{"hourValue"};
         }
-        if (array_key_exists("value", $this->stdResult)) {
+        if (is_array_key_exists("value", $this->stdResult)) {
             $this->value = $this->stdResult->{"value"};
         }
     }
@@ -123,18 +123,18 @@ class UmengUappCountData extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("date", $this->arrayResult)) {
+        if (is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (array_key_exists("dailyValue", $this->arrayResult)) {
+        if (is_array_key_exists("dailyValue", $this->arrayResult)) {
             $dailyValueResult=$arrayResult['dailyValue'];
             $this->dailyValue = new UmengUappCountDataNameValue();
             $this->dailyValue->setStdResult($dailyValueResult);
         }
-        if (array_key_exists("hourValue", $this->arrayResult)) {
+        if (is_array_key_exists("hourValue", $this->arrayResult)) {
             $this->hourValue = $arrayResult['hourValue'];
         }
-        if (array_key_exists("value", $this->arrayResult)) {
+        if (is_array_key_exists("value", $this->arrayResult)) {
             $this->value = $arrayResult['value'];
         }
     }

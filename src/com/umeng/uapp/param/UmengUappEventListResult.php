@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappEventInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappEventInfo;
 
 class UmengUappEventListResult
 {
@@ -75,7 +75,7 @@ class UmengUappEventListResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("eventInfo", $this->stdResult)) {
+        if (is_array_key_exists("eventInfo", $this->stdResult)) {
             $eventInfoResult=$this->stdResult->{"eventInfo"};
             $object = json_decode(json_encode($eventInfoResult), true);
             $this->eventInfo = array();
@@ -86,10 +86,10 @@ class UmengUappEventListResult
                 $this->eventInfo [$i] = $UmengUappEventInfoResult;
             }
         }
-        if (array_key_exists("page", $this->stdResult)) {
+        if (is_array_key_exists("page", $this->stdResult)) {
             $this->page = $this->stdResult->{"page"};
         }
-        if (array_key_exists("totalPage", $this->stdResult)) {
+        if (is_array_key_exists("totalPage", $this->stdResult)) {
             $this->totalPage = $this->stdResult->{"totalPage"};
         }
     }
@@ -98,15 +98,15 @@ class UmengUappEventListResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("eventInfo", $this->arrayResult)) {
+        if (is_array_key_exists("eventInfo", $this->arrayResult)) {
             $eventInfoResult=$arrayResult['eventInfo'];
             $this->eventInfo = new UmengUappEventInfo();
             $this->eventInfo->setStdResult($eventInfoResult);
         }
-        if (array_key_exists("page", $this->arrayResult)) {
+        if (is_array_key_exists("page", $this->arrayResult)) {
             $this->page = $arrayResult['page'];
         }
-        if (array_key_exists("totalPage", $this->arrayResult)) {
+        if (is_array_key_exists("totalPage", $this->arrayResult)) {
             $this->totalPage = $arrayResult['totalPage'];
         }
     }

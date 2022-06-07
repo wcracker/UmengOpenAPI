@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUminiShareUserDTO extends SDKDomain
 {
@@ -158,25 +158,25 @@ class UmengUminiShareUserDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("reflowRatio", $this->stdResult)) {
+        if (is_array_key_exists("reflowRatio", $this->stdResult)) {
             $this->reflowRatio = $this->stdResult->{"reflowRatio"};
         }
-        if (array_key_exists("avatarUrl", $this->stdResult)) {
+        if (is_array_key_exists("avatarUrl", $this->stdResult)) {
             $this->avatarUrl = $this->stdResult->{"avatarUrl"};
         }
-        if (array_key_exists("reflow", $this->stdResult)) {
+        if (is_array_key_exists("reflow", $this->stdResult)) {
             $this->reflow = $this->stdResult->{"reflow"};
         }
-        if (array_key_exists("nickName", $this->stdResult)) {
+        if (is_array_key_exists("nickName", $this->stdResult)) {
             $this->nickName = $this->stdResult->{"nickName"};
         }
-        if (array_key_exists("newUser", $this->stdResult)) {
+        if (is_array_key_exists("newUser", $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (array_key_exists("count", $this->stdResult)) {
+        if (is_array_key_exists("count", $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (array_key_exists("userId", $this->stdResult)) {
+        if (is_array_key_exists("userId", $this->stdResult)) {
             $this->userId = $this->stdResult->{"userId"};
         }
     }
@@ -185,25 +185,25 @@ class UmengUminiShareUserDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("reflowRatio", $this->arrayResult)) {
+        if (is_array_key_exists("reflowRatio", $this->arrayResult)) {
             $this->reflowRatio = $arrayResult['reflowRatio'];
         }
-        if (array_key_exists("avatarUrl", $this->arrayResult)) {
+        if (is_array_key_exists("avatarUrl", $this->arrayResult)) {
             $this->avatarUrl = $arrayResult['avatarUrl'];
         }
-        if (array_key_exists("reflow", $this->arrayResult)) {
+        if (is_array_key_exists("reflow", $this->arrayResult)) {
             $this->reflow = $arrayResult['reflow'];
         }
-        if (array_key_exists("nickName", $this->arrayResult)) {
+        if (is_array_key_exists("nickName", $this->arrayResult)) {
             $this->nickName = $arrayResult['nickName'];
         }
-        if (array_key_exists("newUser", $this->arrayResult)) {
+        if (is_array_key_exists("newUser", $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (array_key_exists("count", $this->arrayResult)) {
+        if (is_array_key_exists("count", $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (array_key_exists("userId", $this->arrayResult)) {
+        if (is_array_key_exists("userId", $this->arrayResult)) {
             $this->userId = $arrayResult['userId'];
         }
     }

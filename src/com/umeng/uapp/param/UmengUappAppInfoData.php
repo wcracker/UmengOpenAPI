@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappAppInfoData extends SDKDomain
 {
@@ -179,28 +179,28 @@ class UmengUappAppInfoData extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("updatedAt", $this->stdResult)) {
+        if (is_array_key_exists("updatedAt", $this->stdResult)) {
             $this->updatedAt = $this->stdResult->{"updatedAt"};
         }
-        if (array_key_exists("useGameSdk", $this->stdResult)) {
+        if (is_array_key_exists("useGameSdk", $this->stdResult)) {
             $this->useGameSdk = $this->stdResult->{"useGameSdk"};
         }
-        if (array_key_exists("name", $this->stdResult)) {
+        if (is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (array_key_exists("createdAt", $this->stdResult)) {
+        if (is_array_key_exists("createdAt", $this->stdResult)) {
             $this->createdAt = $this->stdResult->{"createdAt"};
         }
-        if (array_key_exists("appkey", $this->stdResult)) {
+        if (is_array_key_exists("appkey", $this->stdResult)) {
             $this->appkey = $this->stdResult->{"appkey"};
         }
-        if (array_key_exists("category", $this->stdResult)) {
+        if (is_array_key_exists("category", $this->stdResult)) {
             $this->category = $this->stdResult->{"category"};
         }
-        if (array_key_exists("popular", $this->stdResult)) {
+        if (is_array_key_exists("popular", $this->stdResult)) {
             $this->popular = $this->stdResult->{"popular"};
         }
-        if (array_key_exists("platform", $this->stdResult)) {
+        if (is_array_key_exists("platform", $this->stdResult)) {
             $this->platform = $this->stdResult->{"platform"};
         }
     }
@@ -209,28 +209,28 @@ class UmengUappAppInfoData extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("updatedAt", $this->arrayResult)) {
+        if (is_array_key_exists("updatedAt", $this->arrayResult)) {
             $this->updatedAt = $arrayResult['updatedAt'];
         }
-        if (array_key_exists("useGameSdk", $this->arrayResult)) {
+        if (is_array_key_exists("useGameSdk", $this->arrayResult)) {
             $this->useGameSdk = $arrayResult['useGameSdk'];
         }
-        if (array_key_exists("name", $this->arrayResult)) {
+        if (is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult['name'];
         }
-        if (array_key_exists("createdAt", $this->arrayResult)) {
+        if (is_array_key_exists("createdAt", $this->arrayResult)) {
             $this->createdAt = $arrayResult['createdAt'];
         }
-        if (array_key_exists("appkey", $this->arrayResult)) {
+        if (is_array_key_exists("appkey", $this->arrayResult)) {
             $this->appkey = $arrayResult['appkey'];
         }
-        if (array_key_exists("category", $this->arrayResult)) {
+        if (is_array_key_exists("category", $this->arrayResult)) {
             $this->category = $arrayResult['category'];
         }
-        if (array_key_exists("popular", $this->arrayResult)) {
+        if (is_array_key_exists("popular", $this->arrayResult)) {
             $this->popular = $arrayResult['popular'];
         }
-        if (array_key_exists("platform", $this->arrayResult)) {
+        if (is_array_key_exists("platform", $this->arrayResult)) {
             $this->platform = $arrayResult['platform'];
         }
     }

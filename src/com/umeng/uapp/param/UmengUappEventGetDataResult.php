@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappDateCountInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappDateCountInfo;
 
 class UmengUappEventGetDataResult
 {
@@ -34,7 +34,7 @@ class UmengUappEventGetDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("eventData", $this->stdResult)) {
+        if (is_array_key_exists("eventData", $this->stdResult)) {
             $eventDataResult=$this->stdResult->{"eventData"};
             $object = json_decode(json_encode($eventDataResult), true);
             $this->eventData = array();
@@ -51,7 +51,7 @@ class UmengUappEventGetDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("eventData", $this->arrayResult)) {
+        if (is_array_key_exists("eventData", $this->arrayResult)) {
             $eventDataResult=$arrayResult['eventData'];
             $this->eventData = new UmengUappDateCountInfo();
             $this->eventData->setStdResult($eventDataResult);

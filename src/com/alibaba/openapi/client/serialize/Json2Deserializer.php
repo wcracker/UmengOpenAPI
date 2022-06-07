@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize;
+namespace Wcracker\UmengOpenAPI\com\alibaba\openapi\client\serialize;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\exception\OceanException;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\exception\OceanException;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
 
 class Json2Deserializer implements DeSerializer
 {

@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\apptrack\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\apptrack\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\apptrack\param\UmengApptrackGetPayAnalysis;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\apptrack\param\UmengApptrackGetPayAnalysis;
 
 class UmengApptrackGetPayAnalysisDataResult
 {
@@ -54,7 +54,7 @@ class UmengApptrackGetPayAnalysisDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("data", $this->stdResult)) {
+        if (is_array_key_exists("data", $this->stdResult)) {
             $dataResult=$this->stdResult->{"data"};
             $object = json_decode(json_encode($dataResult), true);
             $this->data = array();
@@ -65,7 +65,7 @@ class UmengApptrackGetPayAnalysisDataResult
                 $this->data [$i] = $UmengApptrackGetPayAnalysisResult;
             }
         }
-        if (array_key_exists("total", $this->stdResult)) {
+        if (is_array_key_exists("total", $this->stdResult)) {
             $this->total = $this->stdResult->{"total"};
         }
     }
@@ -74,12 +74,12 @@ class UmengApptrackGetPayAnalysisDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("data", $this->arrayResult)) {
+        if (is_array_key_exists("data", $this->arrayResult)) {
             $dataResult=$arrayResult['data'];
             $this->data = new UmengApptrackGetPayAnalysis();
             $this->data->setStdResult($dataResult);
         }
-        if (array_key_exists("total", $this->arrayResult)) {
+        if (is_array_key_exists("total", $this->arrayResult)) {
             $this->total = $arrayResult['total'];
         }
     }

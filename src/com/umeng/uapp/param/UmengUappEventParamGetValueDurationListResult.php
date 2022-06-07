@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappParamValueInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappParamValueInfo;
 
 class UmengUappEventParamGetValueDurationListResult
 {
@@ -34,7 +34,7 @@ class UmengUappEventParamGetValueDurationListResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("paramInfos", $this->stdResult)) {
+        if (is_array_key_exists("paramInfos", $this->stdResult)) {
             $paramInfosResult=$this->stdResult->{"paramInfos"};
             $object = json_decode(json_encode($paramInfosResult), true);
             $this->paramInfos = array();
@@ -51,7 +51,7 @@ class UmengUappEventParamGetValueDurationListResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("paramInfos", $this->arrayResult)) {
+        if (is_array_key_exists("paramInfos", $this->arrayResult)) {
             $paramInfosResult=$arrayResult['paramInfos'];
             $this->paramInfos = new UmengUappParamValueInfo();
             $this->paramInfos->setStdResult($paramInfosResult);

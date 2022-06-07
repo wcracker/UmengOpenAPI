@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\apptrack\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\apptrack\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengApptrackGetRegisterAnalysis extends SDKDomain
 {
@@ -95,16 +95,16 @@ class UmengApptrackGetRegisterAnalysis extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("registerId", $this->stdResult)) {
+        if (is_array_key_exists("registerId", $this->stdResult)) {
             $this->registerId = $this->stdResult->{"registerId"};
         }
-        if (array_key_exists("eventDs", $this->stdResult)) {
+        if (is_array_key_exists("eventDs", $this->stdResult)) {
             $this->eventDs = $this->stdResult->{"eventDs"};
         }
-        if (array_key_exists("activateDs", $this->stdResult)) {
+        if (is_array_key_exists("activateDs", $this->stdResult)) {
             $this->activateDs = $this->stdResult->{"activateDs"};
         }
-        if (array_key_exists("clickDs", $this->stdResult)) {
+        if (is_array_key_exists("clickDs", $this->stdResult)) {
             $this->clickDs = $this->stdResult->{"clickDs"};
         }
     }
@@ -113,16 +113,16 @@ class UmengApptrackGetRegisterAnalysis extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("registerId", $this->arrayResult)) {
+        if (is_array_key_exists("registerId", $this->arrayResult)) {
             $this->registerId = $arrayResult['registerId'];
         }
-        if (array_key_exists("eventDs", $this->arrayResult)) {
+        if (is_array_key_exists("eventDs", $this->arrayResult)) {
             $this->eventDs = $arrayResult['eventDs'];
         }
-        if (array_key_exists("activateDs", $this->arrayResult)) {
+        if (is_array_key_exists("activateDs", $this->arrayResult)) {
             $this->activateDs = $arrayResult['activateDs'];
         }
-        if (array_key_exists("clickDs", $this->arrayResult)) {
+        if (is_array_key_exists("clickDs", $this->arrayResult)) {
             $this->clickDs = $arrayResult['clickDs'];
         }
     }

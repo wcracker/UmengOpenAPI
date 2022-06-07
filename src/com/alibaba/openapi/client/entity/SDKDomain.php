@@ -1,5 +1,5 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity;
+namespace Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity;
 
 class SDKDomain
 {

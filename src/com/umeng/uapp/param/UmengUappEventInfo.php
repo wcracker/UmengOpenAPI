@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappEventInfo extends SDKDomain
 {
@@ -95,16 +95,16 @@ class UmengUappEventInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("name", $this->stdResult)) {
+        if (is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (array_key_exists("count", $this->stdResult)) {
+        if (is_array_key_exists("count", $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (array_key_exists("id", $this->stdResult)) {
+        if (is_array_key_exists("id", $this->stdResult)) {
             $this->id = $this->stdResult->{"id"};
         }
-        if (array_key_exists("displayName", $this->stdResult)) {
+        if (is_array_key_exists("displayName", $this->stdResult)) {
             $this->displayName = $this->stdResult->{"displayName"};
         }
     }
@@ -113,16 +113,16 @@ class UmengUappEventInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("name", $this->arrayResult)) {
+        if (is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult['name'];
         }
-        if (array_key_exists("count", $this->arrayResult)) {
+        if (is_array_key_exists("count", $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (array_key_exists("id", $this->arrayResult)) {
+        if (is_array_key_exists("id", $this->arrayResult)) {
             $this->id = $arrayResult['id'];
         }
-        if (array_key_exists("displayName", $this->arrayResult)) {
+        if (is_array_key_exists("displayName", $this->arrayResult)) {
             $this->displayName = $arrayResult['displayName'];
         }
     }

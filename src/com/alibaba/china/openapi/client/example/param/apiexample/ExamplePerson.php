@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
+namespace Wcracker\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class ExamplePerson extends SDKDomain
 {
@@ -102,16 +102,16 @@ class ExamplePerson extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("name", $this->stdResult)) {
+        if (is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (array_key_exists("age", $this->stdResult)) {
+        if (is_array_key_exists("age", $this->stdResult)) {
             $this->age = $this->stdResult->{"age"};
         }
-        if (array_key_exists("birthday", $this->stdResult)) {
+        if (is_array_key_exists("birthday", $this->stdResult)) {
             $this->birthday = $this->stdResult->{"birthday"};
         }
-        if (array_key_exists("mobileNumber", $this->stdResult)) {
+        if (is_array_key_exists("mobileNumber", $this->stdResult)) {
             $this->mobileNumber = $this->stdResult->{"mobileNumber"};
         }
     }
@@ -119,16 +119,16 @@ class ExamplePerson extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("name", $this->arrayResult)) {
+        if (is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult ['name'];
         }
-        if (array_key_exists("age", $this->arrayResult)) {
+        if (is_array_key_exists("age", $this->arrayResult)) {
             $this->age = $arrayResult ['age'];
         }
-        if (array_key_exists("birthday", $this->arrayResult)) {
+        if (is_array_key_exists("birthday", $this->arrayResult)) {
             $this->birthday = $arrayResult ['birthday'];
         }
-        if (array_key_exists("mobileNumber", $this->arrayResult)) {
+        if (is_array_key_exists("mobileNumber", $this->arrayResult)) {
             $this->mobileNumber = $arrayResult ['mobileNumber'];
         }
     }

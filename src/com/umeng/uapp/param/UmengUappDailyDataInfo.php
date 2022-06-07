@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappDailyDataInfo extends SDKDomain
 {
@@ -137,22 +137,22 @@ class UmengUappDailyDataInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("date", $this->stdResult)) {
+        if (is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (array_key_exists("activityUsers", $this->stdResult)) {
+        if (is_array_key_exists("activityUsers", $this->stdResult)) {
             $this->activityUsers = $this->stdResult->{"activityUsers"};
         }
-        if (array_key_exists("totalUsers", $this->stdResult)) {
+        if (is_array_key_exists("totalUsers", $this->stdResult)) {
             $this->totalUsers = $this->stdResult->{"totalUsers"};
         }
-        if (array_key_exists("launches", $this->stdResult)) {
+        if (is_array_key_exists("launches", $this->stdResult)) {
             $this->launches = $this->stdResult->{"launches"};
         }
-        if (array_key_exists("newUsers", $this->stdResult)) {
+        if (is_array_key_exists("newUsers", $this->stdResult)) {
             $this->newUsers = $this->stdResult->{"newUsers"};
         }
-        if (array_key_exists("payUsers", $this->stdResult)) {
+        if (is_array_key_exists("payUsers", $this->stdResult)) {
             $this->payUsers = $this->stdResult->{"payUsers"};
         }
     }
@@ -161,22 +161,22 @@ class UmengUappDailyDataInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("date", $this->arrayResult)) {
+        if (is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (array_key_exists("activityUsers", $this->arrayResult)) {
+        if (is_array_key_exists("activityUsers", $this->arrayResult)) {
             $this->activityUsers = $arrayResult['activityUsers'];
         }
-        if (array_key_exists("totalUsers", $this->arrayResult)) {
+        if (is_array_key_exists("totalUsers", $this->arrayResult)) {
             $this->totalUsers = $arrayResult['totalUsers'];
         }
-        if (array_key_exists("launches", $this->arrayResult)) {
+        if (is_array_key_exists("launches", $this->arrayResult)) {
             $this->launches = $arrayResult['launches'];
         }
-        if (array_key_exists("newUsers", $this->arrayResult)) {
+        if (is_array_key_exists("newUsers", $this->arrayResult)) {
             $this->newUsers = $arrayResult['newUsers'];
         }
-        if (array_key_exists("payUsers", $this->arrayResult)) {
+        if (is_array_key_exists("payUsers", $this->arrayResult)) {
             $this->payUsers = $arrayResult['payUsers'];
         }
     }

@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappAccountInfo extends SDKDomain
 {
@@ -116,19 +116,19 @@ class UmengUappAccountInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("date", $this->stdResult)) {
+        if (is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (array_key_exists("newUser", $this->stdResult)) {
+        if (is_array_key_exists("newUser", $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (array_key_exists("newAccount", $this->stdResult)) {
+        if (is_array_key_exists("newAccount", $this->stdResult)) {
             $this->newAccount = $this->stdResult->{"newAccount"};
         }
-        if (array_key_exists("hourNewUser", $this->stdResult)) {
+        if (is_array_key_exists("hourNewUser", $this->stdResult)) {
             $this->hourNewUser = $this->stdResult->{"hourNewUser"};
         }
-        if (array_key_exists("hourNewAccount", $this->stdResult)) {
+        if (is_array_key_exists("hourNewAccount", $this->stdResult)) {
             $this->hourNewAccount = $this->stdResult->{"hourNewAccount"};
         }
     }
@@ -137,19 +137,19 @@ class UmengUappAccountInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("date", $this->arrayResult)) {
+        if (is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (array_key_exists("newUser", $this->arrayResult)) {
+        if (is_array_key_exists("newUser", $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (array_key_exists("newAccount", $this->arrayResult)) {
+        if (is_array_key_exists("newAccount", $this->arrayResult)) {
             $this->newAccount = $arrayResult['newAccount'];
         }
-        if (array_key_exists("hourNewUser", $this->arrayResult)) {
+        if (is_array_key_exists("hourNewUser", $this->arrayResult)) {
             $this->hourNewUser = $arrayResult['hourNewUser'];
         }
-        if (array_key_exists("hourNewAccount", $this->arrayResult)) {
+        if (is_array_key_exists("hourNewAccount", $this->arrayResult)) {
             $this->hourNewAccount = $arrayResult['hourNewAccount'];
         }
     }

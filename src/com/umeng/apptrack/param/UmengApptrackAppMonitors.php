@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\apptrack\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\apptrack\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengApptrackAppMonitors extends SDKDomain
 {
@@ -116,19 +116,19 @@ class UmengApptrackAppMonitors extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("mid", $this->stdResult)) {
+        if (is_is_array_key_exists("mid", $this->stdResult)) {
             $this->mid = $this->stdResult->{"mid"};
         }
-        if (array_key_exists("mName", $this->stdResult)) {
+        if (is_array_key_exists("mName", $this->stdResult)) {
             $this->mName = $this->stdResult->{"mName"};
         }
-        if (array_key_exists("chanName", $this->stdResult)) {
+        if (is_array_key_exists("chanName", $this->stdResult)) {
             $this->chanName = $this->stdResult->{"chanName"};
         }
-        if (array_key_exists("downloadUrl", $this->stdResult)) {
+        if (is_array_key_exists("downloadUrl", $this->stdResult)) {
             $this->downloadUrl = $this->stdResult->{"downloadUrl"};
         }
-        if (array_key_exists("shortUrl", $this->stdResult)) {
+        if (is_array_key_exists("shortUrl", $this->stdResult)) {
             $this->shortUrl = $this->stdResult->{"shortUrl"};
         }
     }
@@ -137,19 +137,19 @@ class UmengApptrackAppMonitors extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("mid", $this->arrayResult)) {
+        if (is_array_key_exists("mid", $this->arrayResult)) {
             $this->mid = $arrayResult['mid'];
         }
-        if (array_key_exists("mName", $this->arrayResult)) {
+        if (is_array_key_exists("mName", $this->arrayResult)) {
             $this->mName = $arrayResult['mName'];
         }
-        if (array_key_exists("chanName", $this->arrayResult)) {
+        if (is_array_key_exists("chanName", $this->arrayResult)) {
             $this->chanName = $arrayResult['chanName'];
         }
-        if (array_key_exists("downloadUrl", $this->arrayResult)) {
+        if (is_array_key_exists("downloadUrl", $this->arrayResult)) {
             $this->downloadUrl = $arrayResult['downloadUrl'];
         }
-        if (array_key_exists("shortUrl", $this->arrayResult)) {
+        if (is_array_key_exists("shortUrl", $this->arrayResult)) {
             $this->shortUrl = $arrayResult['shortUrl'];
         }
     }

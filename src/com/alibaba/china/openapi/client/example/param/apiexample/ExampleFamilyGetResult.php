@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
+namespace Wcracker\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamily;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExampleFamily;
 
 class ExampleFamilyGetResult
 {
@@ -33,7 +33,7 @@ class ExampleFamilyGetResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("result", $this->stdResult)) {
+        if (is_array_key_exists("result", $this->stdResult)) {
             $resultResult = $this->stdResult->{"result"};
             $this->result = new ExampleFamily();
             $this->result->setStdResult($resultResult);
@@ -43,7 +43,7 @@ class ExampleFamilyGetResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("result", $this->arrayResult)) {
+        if (is_array_key_exists("result", $this->arrayResult)) {
             $resultResult = $arrayResult ['result'];
             $this->result = new ExampleFamily();
             $this->result->$this->setStdResult($resultResult);

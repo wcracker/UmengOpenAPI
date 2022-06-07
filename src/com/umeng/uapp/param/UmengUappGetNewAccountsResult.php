@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappAccountInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappAccountInfo;
 
 class UmengUappGetNewAccountsResult
 {
@@ -34,7 +34,7 @@ class UmengUappGetNewAccountsResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("newAccountInfo", $this->stdResult)) {
+        if (is_array_key_exists("newAccountInfo", $this->stdResult)) {
             $newAccountInfoResult=$this->stdResult->{"newAccountInfo"};
             $object = json_decode(json_encode($newAccountInfoResult), true);
             $this->newAccountInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetNewAccountsResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("newAccountInfo", $this->arrayResult)) {
+        if (is_array_key_exists("newAccountInfo", $this->arrayResult)) {
             $newAccountInfoResult=$arrayResult['newAccountInfo'];
             $this->newAccountInfo = new UmengUappAccountInfo();
             $this->newAccountInfo->setStdResult($newAccountInfoResult);

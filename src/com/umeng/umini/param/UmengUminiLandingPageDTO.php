@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUminiLandingPageDTO extends SDKDomain
 {
@@ -116,19 +116,19 @@ class UmengUminiLandingPageDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("page", $this->stdResult)) {
+        if (is_array_key_exists("page", $this->stdResult)) {
             $this->page = $this->stdResult->{"page"};
         }
-        if (array_key_exists("displayName", $this->stdResult)) {
+        if (is_array_key_exists("displayName", $this->stdResult)) {
             $this->displayName = $this->stdResult->{"displayName"};
         }
-        if (array_key_exists("visitTimes", $this->stdResult)) {
+        if (is_array_key_exists("visitTimes", $this->stdResult)) {
             $this->visitTimes = $this->stdResult->{"visitTimes"};
         }
-        if (array_key_exists("visitUser", $this->stdResult)) {
+        if (is_array_key_exists("visitUser", $this->stdResult)) {
             $this->visitUser = $this->stdResult->{"visitUser"};
         }
-        if (array_key_exists("jumpRatio", $this->stdResult)) {
+        if (is_array_key_exists("jumpRatio", $this->stdResult)) {
             $this->jumpRatio = $this->stdResult->{"jumpRatio"};
         }
     }
@@ -137,19 +137,19 @@ class UmengUminiLandingPageDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("page", $this->arrayResult)) {
+        if (is_array_key_exists("page", $this->arrayResult)) {
             $this->page = $arrayResult['page'];
         }
-        if (array_key_exists("displayName", $this->arrayResult)) {
+        if (is_array_key_exists("displayName", $this->arrayResult)) {
             $this->displayName = $arrayResult['displayName'];
         }
-        if (array_key_exists("visitTimes", $this->arrayResult)) {
+        if (is_array_key_exists("visitTimes", $this->arrayResult)) {
             $this->visitTimes = $arrayResult['visitTimes'];
         }
-        if (array_key_exists("visitUser", $this->arrayResult)) {
+        if (is_array_key_exists("visitUser", $this->arrayResult)) {
             $this->visitUser = $arrayResult['visitUser'];
         }
-        if (array_key_exists("jumpRatio", $this->arrayResult)) {
+        if (is_array_key_exists("jumpRatio", $this->arrayResult)) {
             $this->jumpRatio = $arrayResult['jumpRatio'];
         }
     }

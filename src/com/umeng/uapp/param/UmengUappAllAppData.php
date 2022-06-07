@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappAllAppData extends SDKDomain
 {
@@ -200,31 +200,31 @@ class UmengUappAllAppData extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("todayActivityUsers", $this->stdResult)) {
+        if (is_array_key_exists("todayActivityUsers", $this->stdResult)) {
             $this->todayActivityUsers = $this->stdResult->{"todayActivityUsers"};
         }
-        if (array_key_exists("todayNewUsers", $this->stdResult)) {
+        if (is_array_key_exists("todayNewUsers", $this->stdResult)) {
             $this->todayNewUsers = $this->stdResult->{"todayNewUsers"};
         }
-        if (array_key_exists("todayLaunches", $this->stdResult)) {
+        if (is_array_key_exists("todayLaunches", $this->stdResult)) {
             $this->todayLaunches = $this->stdResult->{"todayLaunches"};
         }
-        if (array_key_exists("yesterdayActivityUsers", $this->stdResult)) {
+        if (is_array_key_exists("yesterdayActivityUsers", $this->stdResult)) {
             $this->yesterdayActivityUsers = $this->stdResult->{"yesterdayActivityUsers"};
         }
-        if (array_key_exists("yesterdayNewUsers", $this->stdResult)) {
+        if (is_array_key_exists("yesterdayNewUsers", $this->stdResult)) {
             $this->yesterdayNewUsers = $this->stdResult->{"yesterdayNewUsers"};
         }
-        if (array_key_exists("yesterdayLaunches", $this->stdResult)) {
+        if (is_array_key_exists("yesterdayLaunches", $this->stdResult)) {
             $this->yesterdayLaunches = $this->stdResult->{"yesterdayLaunches"};
         }
-        if (array_key_exists("yesterdayUniqNewUsers", $this->stdResult)) {
+        if (is_array_key_exists("yesterdayUniqNewUsers", $this->stdResult)) {
             $this->yesterdayUniqNewUsers = $this->stdResult->{"yesterdayUniqNewUsers"};
         }
-        if (array_key_exists("yesterdayUniqActiveUsers", $this->stdResult)) {
+        if (is_array_key_exists("yesterdayUniqActiveUsers", $this->stdResult)) {
             $this->yesterdayUniqActiveUsers = $this->stdResult->{"yesterdayUniqActiveUsers"};
         }
-        if (array_key_exists("totalUsers", $this->stdResult)) {
+        if (is_array_key_exists("totalUsers", $this->stdResult)) {
             $this->totalUsers = $this->stdResult->{"totalUsers"};
         }
     }
@@ -233,31 +233,31 @@ class UmengUappAllAppData extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("todayActivityUsers", $this->arrayResult)) {
+        if (is_array_key_exists("todayActivityUsers", $this->arrayResult)) {
             $this->todayActivityUsers = $arrayResult['todayActivityUsers'];
         }
-        if (array_key_exists("todayNewUsers", $this->arrayResult)) {
+        if (is_array_key_exists("todayNewUsers", $this->arrayResult)) {
             $this->todayNewUsers = $arrayResult['todayNewUsers'];
         }
-        if (array_key_exists("todayLaunches", $this->arrayResult)) {
+        if (is_array_key_exists("todayLaunches", $this->arrayResult)) {
             $this->todayLaunches = $arrayResult['todayLaunches'];
         }
-        if (array_key_exists("yesterdayActivityUsers", $this->arrayResult)) {
+        if (is_array_key_exists("yesterdayActivityUsers", $this->arrayResult)) {
             $this->yesterdayActivityUsers = $arrayResult['yesterdayActivityUsers'];
         }
-        if (array_key_exists("yesterdayNewUsers", $this->arrayResult)) {
+        if (is_array_key_exists("yesterdayNewUsers", $this->arrayResult)) {
             $this->yesterdayNewUsers = $arrayResult['yesterdayNewUsers'];
         }
-        if (array_key_exists("yesterdayLaunches", $this->arrayResult)) {
+        if (is_array_key_exists("yesterdayLaunches", $this->arrayResult)) {
             $this->yesterdayLaunches = $arrayResult['yesterdayLaunches'];
         }
-        if (array_key_exists("yesterdayUniqNewUsers", $this->arrayResult)) {
+        if (is_array_key_exists("yesterdayUniqNewUsers", $this->arrayResult)) {
             $this->yesterdayUniqNewUsers = $arrayResult['yesterdayUniqNewUsers'];
         }
-        if (array_key_exists("yesterdayUniqActiveUsers", $this->arrayResult)) {
+        if (is_array_key_exists("yesterdayUniqActiveUsers", $this->arrayResult)) {
             $this->yesterdayUniqActiveUsers = $arrayResult['yesterdayUniqActiveUsers'];
         }
-        if (array_key_exists("totalUsers", $this->arrayResult)) {
+        if (is_array_key_exists("totalUsers", $this->arrayResult)) {
             $this->totalUsers = $arrayResult['totalUsers'];
         }
     }

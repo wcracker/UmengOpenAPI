@@ -1,10 +1,10 @@
 <?php
 
-namespace Roiwk\UmengOpenAPI;
+namespace Wcracker\UmengOpenAPI;
 
-use Roiwk\UmengOpenAPI\App\Apptrack;
-use Roiwk\UmengOpenAPI\App\Uapp;
-use Roiwk\UmengOpenAPI\App\Umini;
+use Wcracker\UmengOpenAPI\App\Apptrack;
+use Wcracker\UmengOpenAPI\App\Uapp;
+use Wcracker\UmengOpenAPI\App\Umini;
 
 class Factory
 {

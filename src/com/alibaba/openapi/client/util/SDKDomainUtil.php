@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util;
+namespace Wcracker\UmengOpenAPI\com\alibaba\openapi\client\util;
 
 use DateTime;
 use ReflectionObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class SDKDomainUtil
 {

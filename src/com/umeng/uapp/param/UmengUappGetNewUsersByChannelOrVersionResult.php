@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappCountData;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappCountData;
 
 class UmengUappGetNewUsersByChannelOrVersionResult
 {
@@ -34,7 +34,7 @@ class UmengUappGetNewUsersByChannelOrVersionResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("newUserInfo", $this->stdResult)) {
+        if (is_array_key_exists("newUserInfo", $this->stdResult)) {
             $newUserInfoResult=$this->stdResult->{"newUserInfo"};
             $object = json_decode(json_encode($newUserInfoResult), true);
             $this->newUserInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetNewUsersByChannelOrVersionResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("newUserInfo", $this->arrayResult)) {
+        if (is_array_key_exists("newUserInfo", $this->arrayResult)) {
             $newUserInfoResult=$arrayResult['newUserInfo'];
             $this->newUserInfo = new UmengUappCountData();
             $this->newUserInfo->setStdResult($newUserInfoResult);

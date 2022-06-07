@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUminiAppInfoDTO extends SDKDomain
 {
@@ -158,25 +158,25 @@ class UmengUminiAppInfoDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("secondLevel", $this->stdResult)) {
+        if (is_array_key_exists("secondLevel", $this->stdResult)) {
             $this->secondLevel = $this->stdResult->{"secondLevel"};
         }
-        if (array_key_exists("dataSourceId", $this->stdResult)) {
+        if (is_array_key_exists("dataSourceId", $this->stdResult)) {
             $this->dataSourceId = $this->stdResult->{"dataSourceId"};
         }
-        if (array_key_exists("appName", $this->stdResult)) {
+        if (is_array_key_exists("appName", $this->stdResult)) {
             $this->appName = $this->stdResult->{"appName"};
         }
-        if (array_key_exists("gmtCreate", $this->stdResult)) {
+        if (is_array_key_exists("gmtCreate", $this->stdResult)) {
             $this->gmtCreate = $this->stdResult->{"gmtCreate"};
         }
-        if (array_key_exists("firstLevel", $this->stdResult)) {
+        if (is_array_key_exists("firstLevel", $this->stdResult)) {
             $this->firstLevel = $this->stdResult->{"firstLevel"};
         }
-        if (array_key_exists("userName", $this->stdResult)) {
+        if (is_array_key_exists("userName", $this->stdResult)) {
             $this->userName = $this->stdResult->{"userName"};
         }
-        if (array_key_exists("platform", $this->stdResult)) {
+        if (is_array_key_exists("platform", $this->stdResult)) {
             $this->platform = $this->stdResult->{"platform"};
         }
     }
@@ -185,25 +185,25 @@ class UmengUminiAppInfoDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("secondLevel", $this->arrayResult)) {
+        if (is_array_key_exists("secondLevel", $this->arrayResult)) {
             $this->secondLevel = $arrayResult['secondLevel'];
         }
-        if (array_key_exists("dataSourceId", $this->arrayResult)) {
+        if (is_array_key_exists("dataSourceId", $this->arrayResult)) {
             $this->dataSourceId = $arrayResult['dataSourceId'];
         }
-        if (array_key_exists("appName", $this->arrayResult)) {
+        if (is_array_key_exists("appName", $this->arrayResult)) {
             $this->appName = $arrayResult['appName'];
         }
-        if (array_key_exists("gmtCreate", $this->arrayResult)) {
+        if (is_array_key_exists("gmtCreate", $this->arrayResult)) {
             $this->gmtCreate = $arrayResult['gmtCreate'];
         }
-        if (array_key_exists("firstLevel", $this->arrayResult)) {
+        if (is_array_key_exists("firstLevel", $this->arrayResult)) {
             $this->firstLevel = $arrayResult['firstLevel'];
         }
-        if (array_key_exists("userName", $this->arrayResult)) {
+        if (is_array_key_exists("userName", $this->arrayResult)) {
             $this->userName = $arrayResult['userName'];
         }
-        if (array_key_exists("platform", $this->arrayResult)) {
+        if (is_array_key_exists("platform", $this->arrayResult)) {
             $this->platform = $arrayResult['platform'];
         }
     }

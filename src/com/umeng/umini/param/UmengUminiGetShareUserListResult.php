@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\umini\param\UmengUminiShareUserListDTO;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\umini\param\UmengUminiShareUserListDTO;
 
 class UmengUminiGetShareUserListResult
 {
@@ -96,18 +96,18 @@ class UmengUminiGetShareUserListResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("data", $this->stdResult)) {
+        if (is_array_key_exists("data", $this->stdResult)) {
             $dataResult=$this->stdResult->{"data"};
             $this->data = new UmengUminiShareUserListDTO();
             $this->data->setStdResult($dataResult);
         }
-        if (array_key_exists("msg", $this->stdResult)) {
+        if (is_array_key_exists("msg", $this->stdResult)) {
             $this->msg = $this->stdResult->{"msg"};
         }
-        if (array_key_exists("code", $this->stdResult)) {
+        if (is_array_key_exists("code", $this->stdResult)) {
             $this->code = $this->stdResult->{"code"};
         }
-        if (array_key_exists("success", $this->stdResult)) {
+        if (is_array_key_exists("success", $this->stdResult)) {
             $this->success = $this->stdResult->{"success"};
         }
     }
@@ -116,18 +116,18 @@ class UmengUminiGetShareUserListResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("data", $this->arrayResult)) {
+        if (is_array_key_exists("data", $this->arrayResult)) {
             $dataResult=$arrayResult['data'];
             $this->data = new UmengUminiShareUserListDTO();
             $this->data->setStdResult($dataResult);
         }
-        if (array_key_exists("msg", $this->arrayResult)) {
+        if (is_array_key_exists("msg", $this->arrayResult)) {
             $this->msg = $arrayResult['msg'];
         }
-        if (array_key_exists("code", $this->arrayResult)) {
+        if (is_array_key_exists("code", $this->arrayResult)) {
             $this->code = $arrayResult['code'];
         }
-        if (array_key_exists("success", $this->arrayResult)) {
+        if (is_array_key_exists("success", $this->arrayResult)) {
             $this->success = $arrayResult['success'];
         }
     }

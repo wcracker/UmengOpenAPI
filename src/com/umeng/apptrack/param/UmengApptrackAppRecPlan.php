@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\apptrack\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\apptrack\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengApptrackAppRecPlan extends SDKDomain
 {
@@ -95,16 +95,16 @@ class UmengApptrackAppRecPlan extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("planId", $this->stdResult)) {
+        if (is_array_key_exists("planId", $this->stdResult)) {
             $this->planId = $this->stdResult->{"planId"};
         }
-        if (array_key_exists("planName", $this->stdResult)) {
+        if (is_array_key_exists("planName", $this->stdResult)) {
             $this->planName = $this->stdResult->{"planName"};
         }
-        if (array_key_exists("startDay", $this->stdResult)) {
+        if (is_array_key_exists("startDay", $this->stdResult)) {
             $this->startDay = $this->stdResult->{"startDay"};
         }
-        if (array_key_exists("endDay", $this->stdResult)) {
+        if (is_array_key_exists("endDay", $this->stdResult)) {
             $this->endDay = $this->stdResult->{"endDay"};
         }
     }
@@ -113,16 +113,16 @@ class UmengApptrackAppRecPlan extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("planId", $this->arrayResult)) {
+        if (is_array_key_exists("planId", $this->arrayResult)) {
             $this->planId = $arrayResult['planId'];
         }
-        if (array_key_exists("planName", $this->arrayResult)) {
+        if (is_array_key_exists("planName", $this->arrayResult)) {
             $this->planName = $arrayResult['planName'];
         }
-        if (array_key_exists("startDay", $this->arrayResult)) {
+        if (is_array_key_exists("startDay", $this->arrayResult)) {
             $this->startDay = $arrayResult['startDay'];
         }
-        if (array_key_exists("endDay", $this->arrayResult)) {
+        if (is_array_key_exists("endDay", $this->arrayResult)) {
             $this->endDay = $arrayResult['endDay'];
         }
     }

@@ -20,7 +20,7 @@ composer require roiwk/umeng-open-api
 
 require_once 'path/to/autoload.php';
 
-use Roiwk\UmengOpenAPI\Factory;
+use Wcracker\UmengOpenAPI\Factory;
 
 $app = Factory::umini([
     'api_key'       => 'your key',

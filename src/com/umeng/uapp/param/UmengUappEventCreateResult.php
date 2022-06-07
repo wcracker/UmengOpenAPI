@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUappEventCreateResult
 {
@@ -53,10 +53,10 @@ class UmengUappEventCreateResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("status", $this->stdResult)) {
+        if (is_array_key_exists("status", $this->stdResult)) {
             $this->status = $this->stdResult->{"status"};
         }
-        if (array_key_exists("msg", $this->stdResult)) {
+        if (is_array_key_exists("msg", $this->stdResult)) {
             $this->msg = $this->stdResult->{"msg"};
         }
     }
@@ -65,10 +65,10 @@ class UmengUappEventCreateResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("status", $this->arrayResult)) {
+        if (is_array_key_exists("status", $this->arrayResult)) {
             $this->status = $arrayResult['status'];
         }
-        if (array_key_exists("msg", $this->arrayResult)) {
+        if (is_array_key_exists("msg", $this->arrayResult)) {
             $this->msg = $arrayResult['msg'];
         }
     }

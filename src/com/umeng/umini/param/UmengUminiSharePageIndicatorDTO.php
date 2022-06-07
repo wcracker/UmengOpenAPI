@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUminiSharePageIndicatorDTO extends SDKDomain
 {
@@ -137,22 +137,22 @@ class UmengUminiSharePageIndicatorDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("reflowRatio", $this->stdResult)) {
+        if (is_array_key_exists("reflowRatio", $this->stdResult)) {
             $this->reflowRatio = $this->stdResult->{"reflowRatio"};
         }
-        if (array_key_exists("path", $this->stdResult)) {
+        if (is_array_key_exists("path", $this->stdResult)) {
             $this->path = $this->stdResult->{"path"};
         }
-        if (array_key_exists("reflow", $this->stdResult)) {
+        if (is_array_key_exists("reflow", $this->stdResult)) {
             $this->reflow = $this->stdResult->{"reflow"};
         }
-        if (array_key_exists("newUser", $this->stdResult)) {
+        if (is_array_key_exists("newUser", $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (array_key_exists("count", $this->stdResult)) {
+        if (is_array_key_exists("count", $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (array_key_exists("user", $this->stdResult)) {
+        if (is_array_key_exists("user", $this->stdResult)) {
             $this->user = $this->stdResult->{"user"};
         }
     }
@@ -161,22 +161,22 @@ class UmengUminiSharePageIndicatorDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("reflowRatio", $this->arrayResult)) {
+        if (is_array_key_exists("reflowRatio", $this->arrayResult)) {
             $this->reflowRatio = $arrayResult['reflowRatio'];
         }
-        if (array_key_exists("path", $this->arrayResult)) {
+        if (is_array_key_exists("path", $this->arrayResult)) {
             $this->path = $arrayResult['path'];
         }
-        if (array_key_exists("reflow", $this->arrayResult)) {
+        if (is_array_key_exists("reflow", $this->arrayResult)) {
             $this->reflow = $arrayResult['reflow'];
         }
-        if (array_key_exists("newUser", $this->arrayResult)) {
+        if (is_array_key_exists("newUser", $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (array_key_exists("count", $this->arrayResult)) {
+        if (is_array_key_exists("count", $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (array_key_exists("user", $this->arrayResult)) {
+        if (is_array_key_exists("user", $this->arrayResult)) {
             $this->user = $arrayResult['user'];
         }
     }

@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\apptrack\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\apptrack\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengApptrackAppDownload extends SDKDomain
 {
@@ -183,28 +183,28 @@ Android如：IMEI、ANDROID_ID、OAID等
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("unitId", $this->stdResult)) {
+        if (is_array_key_exists("unitId", $this->stdResult)) {
             $this->unitId = $this->stdResult->{"unitId"};
         }
-        if (array_key_exists("mName", $this->stdResult)) {
+        if (is_array_key_exists("mName", $this->stdResult)) {
             $this->mName = $this->stdResult->{"mName"};
         }
-        if (array_key_exists("planName", $this->stdResult)) {
+        if (is_array_key_exists("planName", $this->stdResult)) {
             $this->planName = $this->stdResult->{"planName"};
         }
-        if (array_key_exists("chanName", $this->stdResult)) {
+        if (is_array_key_exists("chanName", $this->stdResult)) {
             $this->chanName = $this->stdResult->{"chanName"};
         }
-        if (array_key_exists("type", $this->stdResult)) {
+        if (is_array_key_exists("type", $this->stdResult)) {
             $this->type = $this->stdResult->{"type"};
         }
-        if (array_key_exists("deviceId", $this->stdResult)) {
+        if (is_array_key_exists("deviceId", $this->stdResult)) {
             $this->deviceId = $this->stdResult->{"deviceId"};
         }
-        if (array_key_exists("clickDate", $this->stdResult)) {
+        if (is_array_key_exists("clickDate", $this->stdResult)) {
             $this->clickDate = $this->stdResult->{"clickDate"};
         }
-        if (array_key_exists("activeDate", $this->stdResult)) {
+        if (is_array_key_exists("activeDate", $this->stdResult)) {
             $this->activeDate = $this->stdResult->{"activeDate"};
         }
     }
@@ -213,28 +213,28 @@ Android如：IMEI、ANDROID_ID、OAID等
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("unitId", $this->arrayResult)) {
+        if (is_array_key_exists("unitId", $this->arrayResult)) {
             $this->unitId = $arrayResult['unitId'];
         }
-        if (array_key_exists("mName", $this->arrayResult)) {
+        if (is_array_key_exists("mName", $this->arrayResult)) {
             $this->mName = $arrayResult['mName'];
         }
-        if (array_key_exists("planName", $this->arrayResult)) {
+        if (is_array_key_exists("planName", $this->arrayResult)) {
             $this->planName = $arrayResult['planName'];
         }
-        if (array_key_exists("chanName", $this->arrayResult)) {
+        if (is_array_key_exists("chanName", $this->arrayResult)) {
             $this->chanName = $arrayResult['chanName'];
         }
-        if (array_key_exists("type", $this->arrayResult)) {
+        if (is_array_key_exists("type", $this->arrayResult)) {
             $this->type = $arrayResult['type'];
         }
-        if (array_key_exists("deviceId", $this->arrayResult)) {
+        if (is_array_key_exists("deviceId", $this->arrayResult)) {
             $this->deviceId = $arrayResult['deviceId'];
         }
-        if (array_key_exists("clickDate", $this->arrayResult)) {
+        if (is_array_key_exists("clickDate", $this->arrayResult)) {
             $this->clickDate = $arrayResult['clickDate'];
         }
-        if (array_key_exists("activeDate", $this->arrayResult)) {
+        if (is_array_key_exists("activeDate", $this->arrayResult)) {
             $this->activeDate = $arrayResult['activeDate'];
         }
     }

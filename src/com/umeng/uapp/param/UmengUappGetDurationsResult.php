@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappDurationInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappDurationInfo;
 
 class UmengUappGetDurationsResult
 {
@@ -55,7 +55,7 @@ class UmengUappGetDurationsResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("durationInfos", $this->stdResult)) {
+        if (is_array_key_exists("durationInfos", $this->stdResult)) {
             $durationInfosResult=$this->stdResult->{"durationInfos"};
             $object = json_decode(json_encode($durationInfosResult), true);
             $this->durationInfos = array();
@@ -66,7 +66,7 @@ class UmengUappGetDurationsResult
                 $this->durationInfos [$i] = $UmengUappDurationInfoResult;
             }
         }
-        if (array_key_exists("average", $this->stdResult)) {
+        if (is_array_key_exists("average", $this->stdResult)) {
             $this->average = $this->stdResult->{"average"};
         }
     }
@@ -75,12 +75,12 @@ class UmengUappGetDurationsResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("durationInfos", $this->arrayResult)) {
+        if (is_array_key_exists("durationInfos", $this->arrayResult)) {
             $durationInfosResult=$arrayResult['durationInfos'];
             $this->durationInfos = new UmengUappDurationInfo();
             $this->durationInfos->setStdResult($durationInfosResult);
         }
-        if (array_key_exists("average", $this->arrayResult)) {
+        if (is_array_key_exists("average", $this->arrayResult)) {
             $this->average = $arrayResult['average'];
         }
     }

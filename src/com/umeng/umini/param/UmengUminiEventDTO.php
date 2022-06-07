@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUminiEventDTO extends SDKDomain
 {
@@ -53,10 +53,10 @@ class UmengUminiEventDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("eventName", $this->stdResult)) {
+        if (is_array_key_exists("eventName", $this->stdResult)) {
             $this->eventName = $this->stdResult->{"eventName"};
         }
-        if (array_key_exists("displayName", $this->stdResult)) {
+        if (is_array_key_exists("displayName", $this->stdResult)) {
             $this->displayName = $this->stdResult->{"displayName"};
         }
     }
@@ -65,10 +65,10 @@ class UmengUminiEventDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("eventName", $this->arrayResult)) {
+        if (is_array_key_exists("eventName", $this->arrayResult)) {
             $this->eventName = $arrayResult['eventName'];
         }
-        if (array_key_exists("displayName", $this->arrayResult)) {
+        if (is_array_key_exists("displayName", $this->arrayResult)) {
             $this->displayName = $arrayResult['displayName'];
         }
     }

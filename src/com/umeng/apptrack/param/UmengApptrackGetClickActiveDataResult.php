@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\apptrack\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\apptrack\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengApptrackGetClickActiveDataResult
 {
@@ -137,22 +137,22 @@ class UmengApptrackGetClickActiveDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("clickPv", $this->stdResult)) {
+        if (is_array_key_exists("clickPv", $this->stdResult)) {
             $this->clickPv = $this->stdResult->{"clickPv"};
         }
-        if (array_key_exists("clickUv", $this->stdResult)) {
+        if (is_array_key_exists("clickUv", $this->stdResult)) {
             $this->clickUv = $this->stdResult->{"clickUv"};
         }
-        if (array_key_exists("activateUv", $this->stdResult)) {
+        if (is_array_key_exists("activateUv", $this->stdResult)) {
             $this->activateUv = $this->stdResult->{"activateUv"};
         }
-        if (array_key_exists("activateRate", $this->stdResult)) {
+        if (is_array_key_exists("activateRate", $this->stdResult)) {
             $this->activateRate = $this->stdResult->{"activateRate"};
         }
-        if (array_key_exists("totalActivateUv", $this->stdResult)) {
+        if (is_array_key_exists("totalActivateUv", $this->stdResult)) {
             $this->totalActivateUv = $this->stdResult->{"totalActivateUv"};
         }
-        if (array_key_exists("activateDevice", $this->stdResult)) {
+        if (is_array_key_exists("activateDevice", $this->stdResult)) {
             $this->activateDevice = $this->stdResult->{"activateDevice"};
         }
     }
@@ -161,22 +161,22 @@ class UmengApptrackGetClickActiveDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("clickPv", $this->arrayResult)) {
+        if (is_array_key_exists("clickPv", $this->arrayResult)) {
             $this->clickPv = $arrayResult['clickPv'];
         }
-        if (array_key_exists("clickUv", $this->arrayResult)) {
+        if (is_array_key_exists("clickUv", $this->arrayResult)) {
             $this->clickUv = $arrayResult['clickUv'];
         }
-        if (array_key_exists("activateUv", $this->arrayResult)) {
+        if (is_array_key_exists("activateUv", $this->arrayResult)) {
             $this->activateUv = $arrayResult['activateUv'];
         }
-        if (array_key_exists("activateRate", $this->arrayResult)) {
+        if (is_array_key_exists("activateRate", $this->arrayResult)) {
             $this->activateRate = $arrayResult['activateRate'];
         }
-        if (array_key_exists("totalActivateUv", $this->arrayResult)) {
+        if (is_array_key_exists("totalActivateUv", $this->arrayResult)) {
             $this->totalActivateUv = $arrayResult['totalActivateUv'];
         }
-        if (array_key_exists("activateDevice", $this->arrayResult)) {
+        if (is_array_key_exists("activateDevice", $this->arrayResult)) {
             $this->activateDevice = $arrayResult['activateDevice'];
         }
     }

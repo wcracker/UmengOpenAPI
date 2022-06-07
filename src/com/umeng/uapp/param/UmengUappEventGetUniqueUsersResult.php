@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappDateCountInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappDateCountInfo;
 
 class UmengUappEventGetUniqueUsersResult
 {
@@ -34,7 +34,7 @@ class UmengUappEventGetUniqueUsersResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("uniqueUsers", $this->stdResult)) {
+        if (is_array_key_exists("uniqueUsers", $this->stdResult)) {
             $uniqueUsersResult=$this->stdResult->{"uniqueUsers"};
             $object = json_decode(json_encode($uniqueUsersResult), true);
             $this->uniqueUsers = array();
@@ -51,7 +51,7 @@ class UmengUappEventGetUniqueUsersResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("uniqueUsers", $this->arrayResult)) {
+        if (is_array_key_exists("uniqueUsers", $this->arrayResult)) {
             $uniqueUsersResult=$arrayResult['uniqueUsers'];
             $this->uniqueUsers = new UmengUappDateCountInfo();
             $this->uniqueUsers->setStdResult($uniqueUsersResult);

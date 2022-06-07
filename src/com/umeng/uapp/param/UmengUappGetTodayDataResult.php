@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Wcracker\UmengOpenAPI\com\umeng\uapp\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappDailyDataInfo;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Wcracker\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Wcracker\UmengOpenAPI\com\umeng\uapp\param\UmengUappDailyDataInfo;
 
 class UmengUappGetTodayDataResult
 {
@@ -33,7 +33,7 @@ class UmengUappGetTodayDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("todayData", $this->stdResult)) {
+        if (is_array_key_exists("todayData", $this->stdResult)) {
             $todayDataResult=$this->stdResult->{"todayData"};
             $this->todayData = new UmengUappDailyDataInfo();
             $this->todayData->setStdResult($todayDataResult);
@@ -44,7 +44,7 @@ class UmengUappGetTodayDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("todayData", $this->arrayResult)) {
+        if (is_array_key_exists("todayData", $this->arrayResult)) {
             $todayDataResult=$arrayResult['todayData'];
             $this->todayData = new UmengUappDailyDataInfo();
             $this->todayData->setStdResult($todayDataResult);
