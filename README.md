@@ -2,13 +2,14 @@
 
 一个简单,好用的友盟open-api的包...
 封装了友盟官方open-api的sdk, 官方sdk版本1.1.4
+基于：[roiwk/UmengOpenAPI](https://github.com/roiwk/UmengOpenAPI) 改动，处理PHP7.4兼容性问题，感谢原作者~
 
 > [umeng官方文档](https://developer.umeng.com/open-api/state)
 
 ## 安装
 
 ```shell
-composer require roiwk/umeng-open-api
+composer require wcracker/umeng-open-api
 ```
 
 ## 快速使用
