@@ -137,22 +137,22 @@ class UmengUminiRefererIndicatorDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("dateTime", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dateTime", $this->stdResult)) {
             $this->dateTime = $this->stdResult->{"dateTime"};
         }
-        if (is_array_key_exists("newUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUser", $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (is_array_key_exists("activeUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeUser", $this->stdResult)) {
             $this->activeUser = $this->stdResult->{"activeUser"};
         }
-        if (is_array_key_exists("launch", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("launch", $this->stdResult)) {
             $this->launch = $this->stdResult->{"launch"};
         }
-        if (is_array_key_exists("visitTimes", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("visitTimes", $this->stdResult)) {
             $this->visitTimes = $this->stdResult->{"visitTimes"};
         }
-        if (is_array_key_exists("onceDuration", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("onceDuration", $this->stdResult)) {
             $this->onceDuration = $this->stdResult->{"onceDuration"};
         }
     }
@@ -161,22 +161,22 @@ class UmengUminiRefererIndicatorDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("dateTime", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dateTime", $this->arrayResult)) {
             $this->dateTime = $arrayResult['dateTime'];
         }
-        if (is_array_key_exists("newUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUser", $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (is_array_key_exists("activeUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeUser", $this->arrayResult)) {
             $this->activeUser = $arrayResult['activeUser'];
         }
-        if (is_array_key_exists("launch", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("launch", $this->arrayResult)) {
             $this->launch = $arrayResult['launch'];
         }
-        if (is_array_key_exists("visitTimes", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("visitTimes", $this->arrayResult)) {
             $this->visitTimes = $arrayResult['visitTimes'];
         }
-        if (is_array_key_exists("onceDuration", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("onceDuration", $this->arrayResult)) {
             $this->onceDuration = $arrayResult['onceDuration'];
         }
     }

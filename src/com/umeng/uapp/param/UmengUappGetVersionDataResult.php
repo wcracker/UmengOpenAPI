@@ -34,7 +34,7 @@ class UmengUappGetVersionDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("versionInfos", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("versionInfos", $this->stdResult)) {
             $versionInfosResult=$this->stdResult->{"versionInfos"};
             $object = json_decode(json_encode($versionInfosResult), true);
             $this->versionInfos = array();
@@ -51,7 +51,7 @@ class UmengUappGetVersionDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("versionInfos", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("versionInfos", $this->arrayResult)) {
             $versionInfosResult=$arrayResult['versionInfos'];
             $this->versionInfos = new UmengUappVersionInfo();
             $this->versionInfos->setStdResult($versionInfosResult);

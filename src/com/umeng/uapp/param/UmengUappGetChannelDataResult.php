@@ -76,7 +76,7 @@ class UmengUappGetChannelDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("channelInfos", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("channelInfos", $this->stdResult)) {
             $channelInfosResult=$this->stdResult->{"channelInfos"};
             $object = json_decode(json_encode($channelInfosResult), true);
             $this->channelInfos = array();
@@ -87,10 +87,10 @@ class UmengUappGetChannelDataResult
                 $this->channelInfos [$i] = $UmengUappChannelInfoResult;
             }
         }
-        if (is_array_key_exists("page", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->stdResult)) {
             $this->page = $this->stdResult->{"page"};
         }
-        if (is_array_key_exists("totalPage", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalPage", $this->stdResult)) {
             $this->totalPage = $this->stdResult->{"totalPage"};
         }
     }
@@ -99,15 +99,15 @@ class UmengUappGetChannelDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("channelInfos", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("channelInfos", $this->arrayResult)) {
             $channelInfosResult=$arrayResult['channelInfos'];
             $this->channelInfos = new UmengUappChannelInfo();
             $this->channelInfos->setStdResult($channelInfosResult);
         }
-        if (is_array_key_exists("page", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->arrayResult)) {
             $this->page = $arrayResult['page'];
         }
-        if (is_array_key_exists("totalPage", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalPage", $this->arrayResult)) {
             $this->totalPage = $arrayResult['totalPage'];
         }
     }

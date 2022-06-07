@@ -171,25 +171,25 @@ class ExampleCar extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("builtDate", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("builtDate", $this->stdResult)) {
             $this->builtDate = $this->stdResult->{"builtDate"};
         }
-        if (is_array_key_exists("boughtDate", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("boughtDate", $this->stdResult)) {
             $this->boughtDate = $this->stdResult->{"boughtDate"};
         }
-        if (is_array_key_exists("name", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (is_array_key_exists("builtArea", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("builtArea", $this->stdResult)) {
             $this->builtArea = $this->stdResult->{"builtArea"};
         }
-        if (is_array_key_exists("carNumber", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("carNumber", $this->stdResult)) {
             $this->carNumber = $this->stdResult->{"carNumber"};
         }
-        if (is_array_key_exists("price", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("price", $this->stdResult)) {
             $this->price = $this->stdResult->{"price"};
         }
-        if (is_array_key_exists("seats", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("seats", $this->stdResult)) {
             $this->seats = $this->stdResult->{"seats"};
         }
     }
@@ -197,25 +197,25 @@ class ExampleCar extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("builtDate", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("builtDate", $this->arrayResult)) {
             $this->builtDate = $arrayResult ['builtDate'];
         }
-        if (is_array_key_exists("boughtDate", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("boughtDate", $this->arrayResult)) {
             $this->boughtDate = $arrayResult ['boughtDate'];
         }
-        if (is_array_key_exists("name", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult ['name'];
         }
-        if (is_array_key_exists("builtArea", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("builtArea", $this->arrayResult)) {
             $this->builtArea = $arrayResult ['builtArea'];
         }
-        if (is_array_key_exists("carNumber", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("carNumber", $this->arrayResult)) {
             $this->carNumber = $arrayResult ['carNumber'];
         }
-        if (is_array_key_exists("price", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("price", $this->arrayResult)) {
             $this->price = $arrayResult ['price'];
         }
-        if (is_array_key_exists("seats", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("seats", $this->arrayResult)) {
             $this->seats = $arrayResult ['seats'];
         }
     }

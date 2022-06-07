@@ -34,7 +34,7 @@ class UmengUappEventParamGetDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("paramValueData", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("paramValueData", $this->stdResult)) {
             $paramValueDataResult=$this->stdResult->{"paramValueData"};
             $object = json_decode(json_encode($paramValueDataResult), true);
             $this->paramValueData = array();
@@ -51,7 +51,7 @@ class UmengUappEventParamGetDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("paramValueData", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("paramValueData", $this->arrayResult)) {
             $paramValueDataResult=$arrayResult['paramValueData'];
             $this->paramValueData = new UmengUappDateCountInfo();
             $this->paramValueData->setStdResult($paramValueDataResult);

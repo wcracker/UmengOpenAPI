@@ -95,16 +95,16 @@ class UmengUminiEditPathDisplayNameResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("msg", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("msg", $this->stdResult)) {
             $this->msg = $this->stdResult->{"msg"};
         }
-        if (is_array_key_exists("code", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("code", $this->stdResult)) {
             $this->code = $this->stdResult->{"code"};
         }
-        if (is_array_key_exists("success", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("success", $this->stdResult)) {
             $this->success = $this->stdResult->{"success"};
         }
-        if (is_array_key_exists("data", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->stdResult)) {
             $this->data = $this->stdResult->{"data"};
         }
     }
@@ -113,16 +113,16 @@ class UmengUminiEditPathDisplayNameResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("msg", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("msg", $this->arrayResult)) {
             $this->msg = $arrayResult['msg'];
         }
-        if (is_array_key_exists("code", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("code", $this->arrayResult)) {
             $this->code = $arrayResult['code'];
         }
-        if (is_array_key_exists("success", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("success", $this->arrayResult)) {
             $this->success = $arrayResult['success'];
         }
-        if (is_array_key_exists("data", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->arrayResult)) {
             $this->data = $arrayResult['data'];
         }
     }

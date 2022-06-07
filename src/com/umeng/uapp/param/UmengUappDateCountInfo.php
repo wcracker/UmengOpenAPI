@@ -53,10 +53,10 @@ class UmengUappDateCountInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("dates", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dates", $this->stdResult)) {
             $this->dates = $this->stdResult->{"dates"};
         }
-        if (is_array_key_exists("data", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->stdResult)) {
             $this->data = $this->stdResult->{"data"};
         }
     }
@@ -65,10 +65,10 @@ class UmengUappDateCountInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("dates", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dates", $this->arrayResult)) {
             $this->dates = $arrayResult['dates'];
         }
-        if (is_array_key_exists("data", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->arrayResult)) {
             $this->data = $arrayResult['data'];
         }
     }

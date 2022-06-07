@@ -74,13 +74,13 @@ class UmengUappParamValueInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("name", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (is_array_key_exists("count", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("count", $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (is_array_key_exists("percent", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("percent", $this->stdResult)) {
             $this->percent = $this->stdResult->{"percent"};
         }
     }
@@ -89,13 +89,13 @@ class UmengUappParamValueInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("name", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult['name'];
         }
-        if (is_array_key_exists("count", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("count", $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (is_array_key_exists("percent", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("percent", $this->arrayResult)) {
             $this->percent = $arrayResult['percent'];
         }
     }

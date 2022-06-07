@@ -179,28 +179,28 @@ class UmengUappAppInfoData extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("updatedAt", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("updatedAt", $this->stdResult)) {
             $this->updatedAt = $this->stdResult->{"updatedAt"};
         }
-        if (is_array_key_exists("useGameSdk", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("useGameSdk", $this->stdResult)) {
             $this->useGameSdk = $this->stdResult->{"useGameSdk"};
         }
-        if (is_array_key_exists("name", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (is_array_key_exists("createdAt", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("createdAt", $this->stdResult)) {
             $this->createdAt = $this->stdResult->{"createdAt"};
         }
-        if (is_array_key_exists("appkey", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("appkey", $this->stdResult)) {
             $this->appkey = $this->stdResult->{"appkey"};
         }
-        if (is_array_key_exists("category", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("category", $this->stdResult)) {
             $this->category = $this->stdResult->{"category"};
         }
-        if (is_array_key_exists("popular", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("popular", $this->stdResult)) {
             $this->popular = $this->stdResult->{"popular"};
         }
-        if (is_array_key_exists("platform", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("platform", $this->stdResult)) {
             $this->platform = $this->stdResult->{"platform"};
         }
     }
@@ -209,28 +209,28 @@ class UmengUappAppInfoData extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("updatedAt", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("updatedAt", $this->arrayResult)) {
             $this->updatedAt = $arrayResult['updatedAt'];
         }
-        if (is_array_key_exists("useGameSdk", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("useGameSdk", $this->arrayResult)) {
             $this->useGameSdk = $arrayResult['useGameSdk'];
         }
-        if (is_array_key_exists("name", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult['name'];
         }
-        if (is_array_key_exists("createdAt", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("createdAt", $this->arrayResult)) {
             $this->createdAt = $arrayResult['createdAt'];
         }
-        if (is_array_key_exists("appkey", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("appkey", $this->arrayResult)) {
             $this->appkey = $arrayResult['appkey'];
         }
-        if (is_array_key_exists("category", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("category", $this->arrayResult)) {
             $this->category = $arrayResult['category'];
         }
-        if (is_array_key_exists("popular", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("popular", $this->arrayResult)) {
             $this->popular = $arrayResult['popular'];
         }
-        if (is_array_key_exists("platform", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("platform", $this->arrayResult)) {
             $this->platform = $arrayResult['platform'];
         }
     }

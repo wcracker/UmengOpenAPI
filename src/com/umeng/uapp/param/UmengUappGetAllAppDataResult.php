@@ -34,7 +34,7 @@ class UmengUappGetAllAppDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("allAppData", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("allAppData", $this->stdResult)) {
             $allAppDataResult=$this->stdResult->{"allAppData"};
             $object = json_decode(json_encode($allAppDataResult), true);
             $this->allAppData = array();
@@ -51,7 +51,7 @@ class UmengUappGetAllAppDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("allAppData", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("allAppData", $this->arrayResult)) {
             $allAppDataResult=$arrayResult['allAppData'];
             $this->allAppData = new UmengUappAllAppData();
             $this->allAppData->setStdResult($allAppDataResult);

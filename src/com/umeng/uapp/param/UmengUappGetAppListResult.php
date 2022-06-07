@@ -76,7 +76,7 @@ class UmengUappGetAppListResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("appInfos", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("appInfos", $this->stdResult)) {
             $appInfosResult=$this->stdResult->{"appInfos"};
             $object = json_decode(json_encode($appInfosResult), true);
             $this->appInfos = array();
@@ -87,10 +87,10 @@ class UmengUappGetAppListResult
                 $this->appInfos [$i] = $UmengUappAppInfoDataResult;
             }
         }
-        if (is_array_key_exists("totalPage", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalPage", $this->stdResult)) {
             $this->totalPage = $this->stdResult->{"totalPage"};
         }
-        if (is_array_key_exists("page", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->stdResult)) {
             $this->page = $this->stdResult->{"page"};
         }
     }
@@ -99,15 +99,15 @@ class UmengUappGetAppListResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("appInfos", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("appInfos", $this->arrayResult)) {
             $appInfosResult=$arrayResult['appInfos'];
             $this->appInfos = new UmengUappAppInfoData();
             $this->appInfos->setStdResult($appInfosResult);
         }
-        if (is_array_key_exists("totalPage", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalPage", $this->arrayResult)) {
             $this->totalPage = $arrayResult['totalPage'];
         }
-        if (is_array_key_exists("page", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->arrayResult)) {
             $this->page = $arrayResult['page'];
         }
     }

@@ -34,7 +34,7 @@ class UmengUappGetActiveUsersByChannelOrVersionResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("activeUserInfo", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeUserInfo", $this->stdResult)) {
             $activeUserInfoResult=$this->stdResult->{"activeUserInfo"};
             $object = json_decode(json_encode($activeUserInfoResult), true);
             $this->activeUserInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetActiveUsersByChannelOrVersionResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("activeUserInfo", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeUserInfo", $this->arrayResult)) {
             $activeUserInfoResult=$arrayResult['activeUserInfo'];
             $this->activeUserInfo = new UmengUappCountData();
             $this->activeUserInfo->setStdResult($activeUserInfoResult);

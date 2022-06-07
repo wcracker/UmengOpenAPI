@@ -27,31 +27,31 @@ class AuthorizationToken
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("access_token", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("access_token", $this->stdResult)) {
             $this->access_token = $this->stdResult->{"access_token"};
         }
-        if (is_array_key_exists("refresh_token", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("refresh_token", $this->stdResult)) {
             $this->refresh_token = $this->stdResult->{"refresh_token"};
         }
-        if (is_array_key_exists("expires_in", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("expires_in", $this->stdResult)) {
             $this->expires_in = $this->stdResult->{"expires_in"};
         }
-        if (is_array_key_exists("expires_time", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("expires_time", $this->stdResult)) {
             $this->expires_time = $this->stdResult->{"expires_time"};
         }
-        if (is_array_key_exists("refresh_token_timeout", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("refresh_token_timeout", $this->stdResult)) {
             $this->refresh_token_timeout = $this->stdResult->{"refresh_token_timeout"};
         }
-        if (is_array_key_exists("resource_owner", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("resource_owner", $this->stdResult)) {
             $this->resource_owner = $this->stdResult->{"resource_owner"};
         }
-        if (is_array_key_exists("uid", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("uid", $this->stdResult)) {
             $this->uid = $this->stdResult->{"uid"};
         }
-        if (is_array_key_exists("aliId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("aliId", $this->stdResult)) {
             $this->aliId = $this->stdResult->{"aliId"};
         }
-        if (is_array_key_exists("memberId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("memberId", $this->stdResult)) {
             $this->memberId = $this->stdResult->{"memberId"};
         }
     }

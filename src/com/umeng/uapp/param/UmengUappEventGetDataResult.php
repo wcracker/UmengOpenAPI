@@ -34,7 +34,7 @@ class UmengUappEventGetDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("eventData", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventData", $this->stdResult)) {
             $eventDataResult=$this->stdResult->{"eventData"};
             $object = json_decode(json_encode($eventDataResult), true);
             $this->eventData = array();
@@ -51,7 +51,7 @@ class UmengUappEventGetDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("eventData", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventData", $this->arrayResult)) {
             $eventDataResult=$arrayResult['eventData'];
             $this->eventData = new UmengUappDateCountInfo();
             $this->eventData->setStdResult($eventDataResult);

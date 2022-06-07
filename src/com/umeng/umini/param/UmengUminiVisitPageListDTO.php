@@ -76,10 +76,10 @@ class UmengUminiVisitPageListDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("currentPage", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("currentPage", $this->stdResult)) {
             $this->currentPage = $this->stdResult->{"currentPage"};
         }
-        if (is_array_key_exists("data", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->stdResult)) {
             $dataResult=$this->stdResult->{"data"};
             $object = json_decode(json_encode($dataResult), true);
             $this->data = array();
@@ -90,7 +90,7 @@ class UmengUminiVisitPageListDTO extends SDKDomain
                 $this->data [$i] = $UmengUminiVisitPageDTOResult;
             }
         }
-        if (is_array_key_exists("totalCount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalCount", $this->stdResult)) {
             $this->totalCount = $this->stdResult->{"totalCount"};
         }
     }
@@ -99,15 +99,15 @@ class UmengUminiVisitPageListDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("currentPage", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("currentPage", $this->arrayResult)) {
             $this->currentPage = $arrayResult['currentPage'];
         }
-        if (is_array_key_exists("data", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->arrayResult)) {
             $dataResult=$arrayResult['data'];
             $this->data = new UmengUminiVisitPageDTO();
             $this->data->setStdResult($dataResult);
         }
-        if (is_array_key_exists("totalCount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalCount", $this->arrayResult)) {
             $this->totalCount = $arrayResult['totalCount'];
         }
     }

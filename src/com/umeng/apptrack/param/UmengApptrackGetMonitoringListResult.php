@@ -54,7 +54,7 @@ class UmengApptrackGetMonitoringListResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("data", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->stdResult)) {
             $dataResult=$this->stdResult->{"data"};
             $object = json_decode(json_encode($dataResult), true);
             $this->data = array();
@@ -65,7 +65,7 @@ class UmengApptrackGetMonitoringListResult
                 $this->data [$i] = $UmengApptrackAppMonitorsResult;
             }
         }
-        if (is_array_key_exists("total", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("total", $this->stdResult)) {
             $this->total = $this->stdResult->{"total"};
         }
     }
@@ -74,12 +74,12 @@ class UmengApptrackGetMonitoringListResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("data", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("data", $this->arrayResult)) {
             $dataResult=$arrayResult['data'];
             $this->data = new UmengApptrackAppMonitors();
             $this->data->setStdResult($dataResult);
         }
-        if (is_array_key_exists("total", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("total", $this->arrayResult)) {
             $this->total = $arrayResult['total'];
         }
     }

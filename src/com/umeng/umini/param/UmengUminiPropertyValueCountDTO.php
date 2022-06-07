@@ -74,13 +74,13 @@ class UmengUminiPropertyValueCountDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("count", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("count", $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (is_array_key_exists("propertyValue", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("propertyValue", $this->stdResult)) {
             $this->propertyValue = $this->stdResult->{"propertyValue"};
         }
-        if (is_array_key_exists("countRatio", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("countRatio", $this->stdResult)) {
             $this->countRatio = $this->stdResult->{"countRatio"};
         }
     }
@@ -89,13 +89,13 @@ class UmengUminiPropertyValueCountDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("count", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("count", $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (is_array_key_exists("propertyValue", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("propertyValue", $this->arrayResult)) {
             $this->propertyValue = $arrayResult['propertyValue'];
         }
-        if (is_array_key_exists("countRatio", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("countRatio", $this->arrayResult)) {
             $this->countRatio = $arrayResult['countRatio'];
         }
     }

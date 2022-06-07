@@ -200,31 +200,31 @@ class UmengUappAllAppData extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("todayActivityUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayActivityUsers", $this->stdResult)) {
             $this->todayActivityUsers = $this->stdResult->{"todayActivityUsers"};
         }
-        if (is_array_key_exists("todayNewUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayNewUsers", $this->stdResult)) {
             $this->todayNewUsers = $this->stdResult->{"todayNewUsers"};
         }
-        if (is_array_key_exists("todayLaunches", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayLaunches", $this->stdResult)) {
             $this->todayLaunches = $this->stdResult->{"todayLaunches"};
         }
-        if (is_array_key_exists("yesterdayActivityUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayActivityUsers", $this->stdResult)) {
             $this->yesterdayActivityUsers = $this->stdResult->{"yesterdayActivityUsers"};
         }
-        if (is_array_key_exists("yesterdayNewUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayNewUsers", $this->stdResult)) {
             $this->yesterdayNewUsers = $this->stdResult->{"yesterdayNewUsers"};
         }
-        if (is_array_key_exists("yesterdayLaunches", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayLaunches", $this->stdResult)) {
             $this->yesterdayLaunches = $this->stdResult->{"yesterdayLaunches"};
         }
-        if (is_array_key_exists("yesterdayUniqNewUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayUniqNewUsers", $this->stdResult)) {
             $this->yesterdayUniqNewUsers = $this->stdResult->{"yesterdayUniqNewUsers"};
         }
-        if (is_array_key_exists("yesterdayUniqActiveUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayUniqActiveUsers", $this->stdResult)) {
             $this->yesterdayUniqActiveUsers = $this->stdResult->{"yesterdayUniqActiveUsers"};
         }
-        if (is_array_key_exists("totalUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalUsers", $this->stdResult)) {
             $this->totalUsers = $this->stdResult->{"totalUsers"};
         }
     }
@@ -233,31 +233,31 @@ class UmengUappAllAppData extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("todayActivityUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayActivityUsers", $this->arrayResult)) {
             $this->todayActivityUsers = $arrayResult['todayActivityUsers'];
         }
-        if (is_array_key_exists("todayNewUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayNewUsers", $this->arrayResult)) {
             $this->todayNewUsers = $arrayResult['todayNewUsers'];
         }
-        if (is_array_key_exists("todayLaunches", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayLaunches", $this->arrayResult)) {
             $this->todayLaunches = $arrayResult['todayLaunches'];
         }
-        if (is_array_key_exists("yesterdayActivityUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayActivityUsers", $this->arrayResult)) {
             $this->yesterdayActivityUsers = $arrayResult['yesterdayActivityUsers'];
         }
-        if (is_array_key_exists("yesterdayNewUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayNewUsers", $this->arrayResult)) {
             $this->yesterdayNewUsers = $arrayResult['yesterdayNewUsers'];
         }
-        if (is_array_key_exists("yesterdayLaunches", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayLaunches", $this->arrayResult)) {
             $this->yesterdayLaunches = $arrayResult['yesterdayLaunches'];
         }
-        if (is_array_key_exists("yesterdayUniqNewUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayUniqNewUsers", $this->arrayResult)) {
             $this->yesterdayUniqNewUsers = $arrayResult['yesterdayUniqNewUsers'];
         }
-        if (is_array_key_exists("yesterdayUniqActiveUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayUniqActiveUsers", $this->arrayResult)) {
             $this->yesterdayUniqActiveUsers = $arrayResult['yesterdayUniqActiveUsers'];
         }
-        if (is_array_key_exists("totalUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalUsers", $this->arrayResult)) {
             $this->totalUsers = $arrayResult['totalUsers'];
         }
     }

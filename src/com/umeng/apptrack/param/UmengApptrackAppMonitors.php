@@ -116,19 +116,19 @@ class UmengApptrackAppMonitors extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_is_array_key_exists("mid", $this->stdResult)) {
+        if (is_(new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mid", $this->stdResult)) {
             $this->mid = $this->stdResult->{"mid"};
         }
-        if (is_array_key_exists("mName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mName", $this->stdResult)) {
             $this->mName = $this->stdResult->{"mName"};
         }
-        if (is_array_key_exists("chanName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("chanName", $this->stdResult)) {
             $this->chanName = $this->stdResult->{"chanName"};
         }
-        if (is_array_key_exists("downloadUrl", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("downloadUrl", $this->stdResult)) {
             $this->downloadUrl = $this->stdResult->{"downloadUrl"};
         }
-        if (is_array_key_exists("shortUrl", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("shortUrl", $this->stdResult)) {
             $this->shortUrl = $this->stdResult->{"shortUrl"};
         }
     }
@@ -137,19 +137,19 @@ class UmengApptrackAppMonitors extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("mid", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mid", $this->arrayResult)) {
             $this->mid = $arrayResult['mid'];
         }
-        if (is_array_key_exists("mName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mName", $this->arrayResult)) {
             $this->mName = $arrayResult['mName'];
         }
-        if (is_array_key_exists("chanName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("chanName", $this->arrayResult)) {
             $this->chanName = $arrayResult['chanName'];
         }
-        if (is_array_key_exists("downloadUrl", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("downloadUrl", $this->arrayResult)) {
             $this->downloadUrl = $arrayResult['downloadUrl'];
         }
-        if (is_array_key_exists("shortUrl", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("shortUrl", $this->arrayResult)) {
             $this->shortUrl = $arrayResult['shortUrl'];
         }
     }

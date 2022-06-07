@@ -34,7 +34,7 @@ class UmengUappGetActiveAccountsResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("activeAccountInfo", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeAccountInfo", $this->stdResult)) {
             $activeAccountInfoResult=$this->stdResult->{"activeAccountInfo"};
             $object = json_decode(json_encode($activeAccountInfoResult), true);
             $this->activeAccountInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetActiveAccountsResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("activeAccountInfo", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeAccountInfo", $this->arrayResult)) {
             $activeAccountInfoResult=$arrayResult['activeAccountInfo'];
             $this->activeAccountInfo = new UmengUappActiveAccountInfo();
             $this->activeAccountInfo->setStdResult($activeAccountInfoResult);

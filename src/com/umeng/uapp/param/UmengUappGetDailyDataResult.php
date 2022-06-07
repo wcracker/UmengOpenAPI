@@ -33,7 +33,7 @@ class UmengUappGetDailyDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("dailyData", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dailyData", $this->stdResult)) {
             $dailyDataResult=$this->stdResult->{"dailyData"};
             $this->dailyData = new UmengUappDailyDataInfo();
             $this->dailyData->setStdResult($dailyDataResult);
@@ -44,7 +44,7 @@ class UmengUappGetDailyDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("dailyData", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dailyData", $this->arrayResult)) {
             $dailyDataResult=$arrayResult['dailyData'];
             $this->dailyData = new UmengUappDailyDataInfo();
             $this->dailyData->setStdResult($dailyDataResult);

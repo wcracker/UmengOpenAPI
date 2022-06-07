@@ -97,10 +97,10 @@ class UmengUappCountData extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("date", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (is_array_key_exists("dailyValue", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dailyValue", $this->stdResult)) {
             $dailyValueResult=$this->stdResult->{"dailyValue"};
             $object = json_decode(json_encode($dailyValueResult), true);
             $this->dailyValue = array();
@@ -111,10 +111,10 @@ class UmengUappCountData extends SDKDomain
                 $this->dailyValue [$i] = $UmengUappCountDataNameValueResult;
             }
         }
-        if (is_array_key_exists("hourValue", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("hourValue", $this->stdResult)) {
             $this->hourValue = $this->stdResult->{"hourValue"};
         }
-        if (is_array_key_exists("value", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("value", $this->stdResult)) {
             $this->value = $this->stdResult->{"value"};
         }
     }
@@ -123,18 +123,18 @@ class UmengUappCountData extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("date", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (is_array_key_exists("dailyValue", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dailyValue", $this->arrayResult)) {
             $dailyValueResult=$arrayResult['dailyValue'];
             $this->dailyValue = new UmengUappCountDataNameValue();
             $this->dailyValue->setStdResult($dailyValueResult);
         }
-        if (is_array_key_exists("hourValue", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("hourValue", $this->arrayResult)) {
             $this->hourValue = $arrayResult['hourValue'];
         }
-        if (is_array_key_exists("value", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("value", $this->arrayResult)) {
             $this->value = $arrayResult['value'];
         }
     }

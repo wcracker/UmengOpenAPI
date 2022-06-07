@@ -95,16 +95,16 @@ class UmengApptrackAppRecPlan extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("planId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("planId", $this->stdResult)) {
             $this->planId = $this->stdResult->{"planId"};
         }
-        if (is_array_key_exists("planName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("planName", $this->stdResult)) {
             $this->planName = $this->stdResult->{"planName"};
         }
-        if (is_array_key_exists("startDay", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("startDay", $this->stdResult)) {
             $this->startDay = $this->stdResult->{"startDay"};
         }
-        if (is_array_key_exists("endDay", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("endDay", $this->stdResult)) {
             $this->endDay = $this->stdResult->{"endDay"};
         }
     }
@@ -113,16 +113,16 @@ class UmengApptrackAppRecPlan extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("planId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("planId", $this->arrayResult)) {
             $this->planId = $arrayResult['planId'];
         }
-        if (is_array_key_exists("planName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("planName", $this->arrayResult)) {
             $this->planName = $arrayResult['planName'];
         }
-        if (is_array_key_exists("startDay", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("startDay", $this->arrayResult)) {
             $this->startDay = $arrayResult['startDay'];
         }
-        if (is_array_key_exists("endDay", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("endDay", $this->arrayResult)) {
             $this->endDay = $arrayResult['endDay'];
         }
     }

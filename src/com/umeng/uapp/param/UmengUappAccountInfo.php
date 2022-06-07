@@ -116,19 +116,19 @@ class UmengUappAccountInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("date", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (is_array_key_exists("newUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUser", $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (is_array_key_exists("newAccount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newAccount", $this->stdResult)) {
             $this->newAccount = $this->stdResult->{"newAccount"};
         }
-        if (is_array_key_exists("hourNewUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("hourNewUser", $this->stdResult)) {
             $this->hourNewUser = $this->stdResult->{"hourNewUser"};
         }
-        if (is_array_key_exists("hourNewAccount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("hourNewAccount", $this->stdResult)) {
             $this->hourNewAccount = $this->stdResult->{"hourNewAccount"};
         }
     }
@@ -137,19 +137,19 @@ class UmengUappAccountInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("date", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (is_array_key_exists("newUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUser", $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (is_array_key_exists("newAccount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newAccount", $this->arrayResult)) {
             $this->newAccount = $arrayResult['newAccount'];
         }
-        if (is_array_key_exists("hourNewUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("hourNewUser", $this->arrayResult)) {
             $this->hourNewUser = $arrayResult['hourNewUser'];
         }
-        if (is_array_key_exists("hourNewAccount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("hourNewAccount", $this->arrayResult)) {
             $this->hourNewAccount = $arrayResult['hourNewAccount'];
         }
     }

@@ -30,4 +30,7 @@ class Umini extends AbstractApplication
         return new $className();
     }
 
+    public function test() {
+        var_dump(is_(new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists('abc', ['abc' => 1]));
+    }
 }

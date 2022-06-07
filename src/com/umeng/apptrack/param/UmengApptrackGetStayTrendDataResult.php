@@ -305,46 +305,46 @@ class UmengApptrackGetStayTrendDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("stay1", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay1", $this->stdResult)) {
             $this->stay1 = $this->stdResult->{"stay1"};
         }
-        if (is_array_key_exists("stay2", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay2", $this->stdResult)) {
             $this->stay2 = $this->stdResult->{"stay2"};
         }
-        if (is_array_key_exists("stay3", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay3", $this->stdResult)) {
             $this->stay3 = $this->stdResult->{"stay3"};
         }
-        if (is_array_key_exists("stay4", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay4", $this->stdResult)) {
             $this->stay4 = $this->stdResult->{"stay4"};
         }
-        if (is_array_key_exists("stay5", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay5", $this->stdResult)) {
             $this->stay5 = $this->stdResult->{"stay5"};
         }
-        if (is_array_key_exists("stay6", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay6", $this->stdResult)) {
             $this->stay6 = $this->stdResult->{"stay6"};
         }
-        if (is_array_key_exists("stay7", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay7", $this->stdResult)) {
             $this->stay7 = $this->stdResult->{"stay7"};
         }
-        if (is_array_key_exists("stay8", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay8", $this->stdResult)) {
             $this->stay8 = $this->stdResult->{"stay8"};
         }
-        if (is_array_key_exists("stay9", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay9", $this->stdResult)) {
             $this->stay9 = $this->stdResult->{"stay9"};
         }
-        if (is_array_key_exists("stay10", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay10", $this->stdResult)) {
             $this->stay10 = $this->stdResult->{"stay10"};
         }
-        if (is_array_key_exists("stay11", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay11", $this->stdResult)) {
             $this->stay11 = $this->stdResult->{"stay11"};
         }
-        if (is_array_key_exists("stay12", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay12", $this->stdResult)) {
             $this->stay12 = $this->stdResult->{"stay12"};
         }
-        if (is_array_key_exists("stay13", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay13", $this->stdResult)) {
             $this->stay13 = $this->stdResult->{"stay13"};
         }
-        if (is_array_key_exists("stay14", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay14", $this->stdResult)) {
             $this->stay14 = $this->stdResult->{"stay14"};
         }
     }
@@ -353,46 +353,46 @@ class UmengApptrackGetStayTrendDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("stay1", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay1", $this->arrayResult)) {
             $this->stay1 = $arrayResult['stay1'];
         }
-        if (is_array_key_exists("stay2", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay2", $this->arrayResult)) {
             $this->stay2 = $arrayResult['stay2'];
         }
-        if (is_array_key_exists("stay3", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay3", $this->arrayResult)) {
             $this->stay3 = $arrayResult['stay3'];
         }
-        if (is_array_key_exists("stay4", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay4", $this->arrayResult)) {
             $this->stay4 = $arrayResult['stay4'];
         }
-        if (is_array_key_exists("stay5", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay5", $this->arrayResult)) {
             $this->stay5 = $arrayResult['stay5'];
         }
-        if (is_array_key_exists("stay6", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay6", $this->arrayResult)) {
             $this->stay6 = $arrayResult['stay6'];
         }
-        if (is_array_key_exists("stay7", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay7", $this->arrayResult)) {
             $this->stay7 = $arrayResult['stay7'];
         }
-        if (is_array_key_exists("stay8", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay8", $this->arrayResult)) {
             $this->stay8 = $arrayResult['stay8'];
         }
-        if (is_array_key_exists("stay9", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay9", $this->arrayResult)) {
             $this->stay9 = $arrayResult['stay9'];
         }
-        if (is_array_key_exists("stay10", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay10", $this->arrayResult)) {
             $this->stay10 = $arrayResult['stay10'];
         }
-        if (is_array_key_exists("stay11", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay11", $this->arrayResult)) {
             $this->stay11 = $arrayResult['stay11'];
         }
-        if (is_array_key_exists("stay12", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay12", $this->arrayResult)) {
             $this->stay12 = $arrayResult['stay12'];
         }
-        if (is_array_key_exists("stay13", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay13", $this->arrayResult)) {
             $this->stay13 = $arrayResult['stay13'];
         }
-        if (is_array_key_exists("stay14", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("stay14", $this->arrayResult)) {
             $this->stay14 = $arrayResult['stay14'];
         }
     }

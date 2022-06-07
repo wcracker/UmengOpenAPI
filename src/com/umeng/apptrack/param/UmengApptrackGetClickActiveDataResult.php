@@ -137,22 +137,22 @@ class UmengApptrackGetClickActiveDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("clickPv", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickPv", $this->stdResult)) {
             $this->clickPv = $this->stdResult->{"clickPv"};
         }
-        if (is_array_key_exists("clickUv", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickUv", $this->stdResult)) {
             $this->clickUv = $this->stdResult->{"clickUv"};
         }
-        if (is_array_key_exists("activateUv", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateUv", $this->stdResult)) {
             $this->activateUv = $this->stdResult->{"activateUv"};
         }
-        if (is_array_key_exists("activateRate", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateRate", $this->stdResult)) {
             $this->activateRate = $this->stdResult->{"activateRate"};
         }
-        if (is_array_key_exists("totalActivateUv", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalActivateUv", $this->stdResult)) {
             $this->totalActivateUv = $this->stdResult->{"totalActivateUv"};
         }
-        if (is_array_key_exists("activateDevice", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateDevice", $this->stdResult)) {
             $this->activateDevice = $this->stdResult->{"activateDevice"};
         }
     }
@@ -161,22 +161,22 @@ class UmengApptrackGetClickActiveDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("clickPv", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickPv", $this->arrayResult)) {
             $this->clickPv = $arrayResult['clickPv'];
         }
-        if (is_array_key_exists("clickUv", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickUv", $this->arrayResult)) {
             $this->clickUv = $arrayResult['clickUv'];
         }
-        if (is_array_key_exists("activateUv", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateUv", $this->arrayResult)) {
             $this->activateUv = $arrayResult['activateUv'];
         }
-        if (is_array_key_exists("activateRate", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateRate", $this->arrayResult)) {
             $this->activateRate = $arrayResult['activateRate'];
         }
-        if (is_array_key_exists("totalActivateUv", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalActivateUv", $this->arrayResult)) {
             $this->totalActivateUv = $arrayResult['totalActivateUv'];
         }
-        if (is_array_key_exists("activateDevice", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateDevice", $this->arrayResult)) {
             $this->activateDevice = $arrayResult['activateDevice'];
         }
     }

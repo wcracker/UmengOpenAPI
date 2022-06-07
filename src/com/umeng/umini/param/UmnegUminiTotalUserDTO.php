@@ -53,10 +53,10 @@ class UmnegUminiTotalUserDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("dateTime", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dateTime", $this->stdResult)) {
             $this->dateTime = $this->stdResult->{"dateTime"};
         }
-        if (is_array_key_exists("totalUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalUser", $this->stdResult)) {
             $this->totalUser = $this->stdResult->{"totalUser"};
         }
     }
@@ -65,10 +65,10 @@ class UmnegUminiTotalUserDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("dateTime", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dateTime", $this->arrayResult)) {
             $this->dateTime = $arrayResult['dateTime'];
         }
-        if (is_array_key_exists("totalUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalUser", $this->arrayResult)) {
             $this->totalUser = $arrayResult['totalUser'];
         }
     }

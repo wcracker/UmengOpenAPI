@@ -431,64 +431,64 @@ class UmengApptrackReport extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("orderId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderId", $this->stdResult)) {
             $this->orderId = $this->stdResult->{"orderId"};
         }
-        if (is_array_key_exists("advertiserId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("advertiserId", $this->stdResult)) {
             $this->advertiserId = $this->stdResult->{"advertiserId"};
         }
-        if (is_array_key_exists("adPlanId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adPlanId", $this->stdResult)) {
             $this->adPlanId = $this->stdResult->{"adPlanId"};
         }
-        if (is_array_key_exists("adPlanName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adPlanName", $this->stdResult)) {
             $this->adPlanName = $this->stdResult->{"adPlanName"};
         }
-        if (is_array_key_exists("adGroupId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adGroupId", $this->stdResult)) {
             $this->adGroupId = $this->stdResult->{"adGroupId"};
         }
-        if (is_array_key_exists("adGroupName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adGroupName", $this->stdResult)) {
             $this->adGroupName = $this->stdResult->{"adGroupName"};
         }
-        if (is_array_key_exists("adCreativeId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adCreativeId", $this->stdResult)) {
             $this->adCreativeId = $this->stdResult->{"adCreativeId"};
         }
-        if (is_array_key_exists("adCreativeName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adCreativeName", $this->stdResult)) {
             $this->adCreativeName = $this->stdResult->{"adCreativeName"};
         }
-        if (is_array_key_exists("pid", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("pid", $this->stdResult)) {
             $this->pid = $this->stdResult->{"pid"};
         }
-        if (is_array_key_exists("pidName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("pidName", $this->stdResult)) {
             $this->pidName = $this->stdResult->{"pidName"};
         }
-        if (is_array_key_exists("mediaId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mediaId", $this->stdResult)) {
             $this->mediaId = $this->stdResult->{"mediaId"};
         }
-        if (is_array_key_exists("mediaName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mediaName", $this->stdResult)) {
             $this->mediaName = $this->stdResult->{"mediaName"};
         }
-        if (is_array_key_exists("landingUrl", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("landingUrl", $this->stdResult)) {
             $this->landingUrl = $this->stdResult->{"landingUrl"};
         }
-        if (is_array_key_exists("showPv", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("showPv", $this->stdResult)) {
             $this->showPv = $this->stdResult->{"showPv"};
         }
-        if (is_array_key_exists("clickPv", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickPv", $this->stdResult)) {
             $this->clickPv = $this->stdResult->{"clickPv"};
         }
-        if (is_array_key_exists("bidCost", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("bidCost", $this->stdResult)) {
             $this->bidCost = $this->stdResult->{"bidCost"};
         }
-        if (is_array_key_exists("conversionUv", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("conversionUv", $this->stdResult)) {
             $this->conversionUv = $this->stdResult->{"conversionUv"};
         }
-        if (is_array_key_exists("ds", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("ds", $this->stdResult)) {
             $this->ds = $this->stdResult->{"ds"};
         }
-        if (is_array_key_exists("retentionCount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("retentionCount", $this->stdResult)) {
             $this->retentionCount = $this->stdResult->{"retentionCount"};
         }
-        if (is_array_key_exists("version", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("version", $this->stdResult)) {
             $this->version = $this->stdResult->{"version"};
         }
     }
@@ -497,64 +497,64 @@ class UmengApptrackReport extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("orderId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderId", $this->arrayResult)) {
             $this->orderId = $arrayResult['orderId'];
         }
-        if (is_array_key_exists("advertiserId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("advertiserId", $this->arrayResult)) {
             $this->advertiserId = $arrayResult['advertiserId'];
         }
-        if (is_array_key_exists("adPlanId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adPlanId", $this->arrayResult)) {
             $this->adPlanId = $arrayResult['adPlanId'];
         }
-        if (is_array_key_exists("adPlanName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adPlanName", $this->arrayResult)) {
             $this->adPlanName = $arrayResult['adPlanName'];
         }
-        if (is_array_key_exists("adGroupId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adGroupId", $this->arrayResult)) {
             $this->adGroupId = $arrayResult['adGroupId'];
         }
-        if (is_array_key_exists("adGroupName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adGroupName", $this->arrayResult)) {
             $this->adGroupName = $arrayResult['adGroupName'];
         }
-        if (is_array_key_exists("adCreativeId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adCreativeId", $this->arrayResult)) {
             $this->adCreativeId = $arrayResult['adCreativeId'];
         }
-        if (is_array_key_exists("adCreativeName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("adCreativeName", $this->arrayResult)) {
             $this->adCreativeName = $arrayResult['adCreativeName'];
         }
-        if (is_array_key_exists("pid", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("pid", $this->arrayResult)) {
             $this->pid = $arrayResult['pid'];
         }
-        if (is_array_key_exists("pidName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("pidName", $this->arrayResult)) {
             $this->pidName = $arrayResult['pidName'];
         }
-        if (is_array_key_exists("mediaId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mediaId", $this->arrayResult)) {
             $this->mediaId = $arrayResult['mediaId'];
         }
-        if (is_array_key_exists("mediaName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mediaName", $this->arrayResult)) {
             $this->mediaName = $arrayResult['mediaName'];
         }
-        if (is_array_key_exists("landingUrl", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("landingUrl", $this->arrayResult)) {
             $this->landingUrl = $arrayResult['landingUrl'];
         }
-        if (is_array_key_exists("showPv", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("showPv", $this->arrayResult)) {
             $this->showPv = $arrayResult['showPv'];
         }
-        if (is_array_key_exists("clickPv", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickPv", $this->arrayResult)) {
             $this->clickPv = $arrayResult['clickPv'];
         }
-        if (is_array_key_exists("bidCost", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("bidCost", $this->arrayResult)) {
             $this->bidCost = $arrayResult['bidCost'];
         }
-        if (is_array_key_exists("conversionUv", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("conversionUv", $this->arrayResult)) {
             $this->conversionUv = $arrayResult['conversionUv'];
         }
-        if (is_array_key_exists("ds", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("ds", $this->arrayResult)) {
             $this->ds = $arrayResult['ds'];
         }
-        if (is_array_key_exists("retentionCount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("retentionCount", $this->arrayResult)) {
             $this->retentionCount = $arrayResult['retentionCount'];
         }
-        if (is_array_key_exists("version", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("version", $this->arrayResult)) {
             $this->version = $arrayResult['version'];
         }
     }

@@ -74,13 +74,13 @@ class UmengUappActiveAccountInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("date", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (is_array_key_exists("activeUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeUser", $this->stdResult)) {
             $this->activeUser = $this->stdResult->{"activeUser"};
         }
-        if (is_array_key_exists("activeAccount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeAccount", $this->stdResult)) {
             $this->activeAccount = $this->stdResult->{"activeAccount"};
         }
     }
@@ -89,13 +89,13 @@ class UmengUappActiveAccountInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("date", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (is_array_key_exists("activeUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeUser", $this->arrayResult)) {
             $this->activeUser = $arrayResult['activeUser'];
         }
-        if (is_array_key_exists("activeAccount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activeAccount", $this->arrayResult)) {
             $this->activeAccount = $arrayResult['activeAccount'];
         }
     }

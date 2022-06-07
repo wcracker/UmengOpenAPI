@@ -102,16 +102,16 @@ class ExamplePerson extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("name", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (is_array_key_exists("age", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("age", $this->stdResult)) {
             $this->age = $this->stdResult->{"age"};
         }
-        if (is_array_key_exists("birthday", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("birthday", $this->stdResult)) {
             $this->birthday = $this->stdResult->{"birthday"};
         }
-        if (is_array_key_exists("mobileNumber", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mobileNumber", $this->stdResult)) {
             $this->mobileNumber = $this->stdResult->{"mobileNumber"};
         }
     }
@@ -119,16 +119,16 @@ class ExamplePerson extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("name", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("name", $this->arrayResult)) {
             $this->name = $arrayResult ['name'];
         }
-        if (is_array_key_exists("age", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("age", $this->arrayResult)) {
             $this->age = $arrayResult ['age'];
         }
-        if (is_array_key_exists("birthday", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("birthday", $this->arrayResult)) {
             $this->birthday = $arrayResult ['birthday'];
         }
-        if (is_array_key_exists("mobileNumber", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("mobileNumber", $this->arrayResult)) {
             $this->mobileNumber = $arrayResult ['mobileNumber'];
         }
     }

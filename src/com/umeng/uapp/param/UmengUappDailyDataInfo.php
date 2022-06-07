@@ -137,22 +137,22 @@ class UmengUappDailyDataInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("date", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (is_array_key_exists("activityUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activityUsers", $this->stdResult)) {
             $this->activityUsers = $this->stdResult->{"activityUsers"};
         }
-        if (is_array_key_exists("totalUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalUsers", $this->stdResult)) {
             $this->totalUsers = $this->stdResult->{"totalUsers"};
         }
-        if (is_array_key_exists("launches", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("launches", $this->stdResult)) {
             $this->launches = $this->stdResult->{"launches"};
         }
-        if (is_array_key_exists("newUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUsers", $this->stdResult)) {
             $this->newUsers = $this->stdResult->{"newUsers"};
         }
-        if (is_array_key_exists("payUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payUsers", $this->stdResult)) {
             $this->payUsers = $this->stdResult->{"payUsers"};
         }
     }
@@ -161,22 +161,22 @@ class UmengUappDailyDataInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("date", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (is_array_key_exists("activityUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activityUsers", $this->arrayResult)) {
             $this->activityUsers = $arrayResult['activityUsers'];
         }
-        if (is_array_key_exists("totalUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalUsers", $this->arrayResult)) {
             $this->totalUsers = $arrayResult['totalUsers'];
         }
-        if (is_array_key_exists("launches", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("launches", $this->arrayResult)) {
             $this->launches = $arrayResult['launches'];
         }
-        if (is_array_key_exists("newUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUsers", $this->arrayResult)) {
             $this->newUsers = $arrayResult['newUsers'];
         }
-        if (is_array_key_exists("payUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payUsers", $this->arrayResult)) {
             $this->payUsers = $arrayResult['payUsers'];
         }
     }

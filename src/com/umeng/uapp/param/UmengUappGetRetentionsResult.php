@@ -34,7 +34,7 @@ class UmengUappGetRetentionsResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("retentionInfo", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("retentionInfo", $this->stdResult)) {
             $retentionInfoResult=$this->stdResult->{"retentionInfo"};
             $object = json_decode(json_encode($retentionInfoResult), true);
             $this->retentionInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetRetentionsResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("retentionInfo", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("retentionInfo", $this->arrayResult)) {
             $retentionInfoResult=$arrayResult['retentionInfo'];
             $this->retentionInfo = new UmengUappRetentionInfo();
             $this->retentionInfo->setStdResult($retentionInfoResult);

@@ -34,7 +34,7 @@ class UmengUappGetNewUsersResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("newUserInfo", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUserInfo", $this->stdResult)) {
             $newUserInfoResult=$this->stdResult->{"newUserInfo"};
             $object = json_decode(json_encode($newUserInfoResult), true);
             $this->newUserInfo = array();
@@ -51,7 +51,7 @@ class UmengUappGetNewUsersResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("newUserInfo", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("newUserInfo", $this->arrayResult)) {
             $newUserInfoResult=$arrayResult['newUserInfo'];
             $this->newUserInfo = new UmengUappCountData();
             $this->newUserInfo->setStdResult($newUserInfoResult);

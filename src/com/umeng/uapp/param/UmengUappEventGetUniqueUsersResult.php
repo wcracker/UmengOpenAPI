@@ -34,7 +34,7 @@ class UmengUappEventGetUniqueUsersResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("uniqueUsers", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("uniqueUsers", $this->stdResult)) {
             $uniqueUsersResult=$this->stdResult->{"uniqueUsers"};
             $object = json_decode(json_encode($uniqueUsersResult), true);
             $this->uniqueUsers = array();
@@ -51,7 +51,7 @@ class UmengUappEventGetUniqueUsersResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("uniqueUsers", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("uniqueUsers", $this->arrayResult)) {
             $uniqueUsersResult=$arrayResult['uniqueUsers'];
             $this->uniqueUsers = new UmengUappDateCountInfo();
             $this->uniqueUsers->setStdResult($uniqueUsersResult);

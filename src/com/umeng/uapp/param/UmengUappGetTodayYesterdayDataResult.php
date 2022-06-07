@@ -54,12 +54,12 @@ class UmengUappGetTodayYesterdayDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("todayData", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayData", $this->stdResult)) {
             $todayDataResult=$this->stdResult->{"todayData"};
             $this->todayData = new UmengUappDailyDataInfo();
             $this->todayData->setStdResult($todayDataResult);
         }
-        if (is_array_key_exists("yesterdayData", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayData", $this->stdResult)) {
             $yesterdayDataResult=$this->stdResult->{"yesterdayData"};
             $this->yesterdayData = new UmengUappDailyDataInfo();
             $this->yesterdayData->setStdResult($yesterdayDataResult);
@@ -70,12 +70,12 @@ class UmengUappGetTodayYesterdayDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("todayData", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("todayData", $this->arrayResult)) {
             $todayDataResult=$arrayResult['todayData'];
             $this->todayData = new UmengUappDailyDataInfo();
             $this->todayData->setStdResult($todayDataResult);
         }
-        if (is_array_key_exists("yesterdayData", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("yesterdayData", $this->arrayResult)) {
             $yesterdayDataResult=$arrayResult['yesterdayData'];
             $this->yesterdayData = new UmengUappDailyDataInfo();
             $this->yesterdayData->setStdResult($yesterdayDataResult);

@@ -20,9 +20,6 @@
     "autoload": {
         "psr-4": {
             "Wcracker\\UmengOpenAPI\\": "src/"
-        },
-        "files": [
-            "src/Common.php"
-        ]
+        }
     }
 }

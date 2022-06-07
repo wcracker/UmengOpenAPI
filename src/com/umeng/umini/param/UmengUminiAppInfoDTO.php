@@ -158,25 +158,25 @@ class UmengUminiAppInfoDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("secondLevel", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("secondLevel", $this->stdResult)) {
             $this->secondLevel = $this->stdResult->{"secondLevel"};
         }
-        if (is_array_key_exists("dataSourceId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dataSourceId", $this->stdResult)) {
             $this->dataSourceId = $this->stdResult->{"dataSourceId"};
         }
-        if (is_array_key_exists("appName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("appName", $this->stdResult)) {
             $this->appName = $this->stdResult->{"appName"};
         }
-        if (is_array_key_exists("gmtCreate", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("gmtCreate", $this->stdResult)) {
             $this->gmtCreate = $this->stdResult->{"gmtCreate"};
         }
-        if (is_array_key_exists("firstLevel", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("firstLevel", $this->stdResult)) {
             $this->firstLevel = $this->stdResult->{"firstLevel"};
         }
-        if (is_array_key_exists("userName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("userName", $this->stdResult)) {
             $this->userName = $this->stdResult->{"userName"};
         }
-        if (is_array_key_exists("platform", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("platform", $this->stdResult)) {
             $this->platform = $this->stdResult->{"platform"};
         }
     }
@@ -185,25 +185,25 @@ class UmengUminiAppInfoDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("secondLevel", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("secondLevel", $this->arrayResult)) {
             $this->secondLevel = $arrayResult['secondLevel'];
         }
-        if (is_array_key_exists("dataSourceId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("dataSourceId", $this->arrayResult)) {
             $this->dataSourceId = $arrayResult['dataSourceId'];
         }
-        if (is_array_key_exists("appName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("appName", $this->arrayResult)) {
             $this->appName = $arrayResult['appName'];
         }
-        if (is_array_key_exists("gmtCreate", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("gmtCreate", $this->arrayResult)) {
             $this->gmtCreate = $arrayResult['gmtCreate'];
         }
-        if (is_array_key_exists("firstLevel", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("firstLevel", $this->arrayResult)) {
             $this->firstLevel = $arrayResult['firstLevel'];
         }
-        if (is_array_key_exists("userName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("userName", $this->arrayResult)) {
             $this->userName = $arrayResult['userName'];
         }
-        if (is_array_key_exists("platform", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("platform", $this->arrayResult)) {
             $this->platform = $arrayResult['platform'];
         }
     }

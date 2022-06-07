@@ -116,19 +116,19 @@ class UmengUminiVisitPageDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("displayName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("displayName", $this->stdResult)) {
             $this->displayName = $this->stdResult->{"displayName"};
         }
-        if (is_array_key_exists("pageDuration", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("pageDuration", $this->stdResult)) {
             $this->pageDuration = $this->stdResult->{"pageDuration"};
         }
-        if (is_array_key_exists("page", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->stdResult)) {
             $this->page = $this->stdResult->{"page"};
         }
-        if (is_array_key_exists("visitUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("visitUser", $this->stdResult)) {
             $this->visitUser = $this->stdResult->{"visitUser"};
         }
-        if (is_array_key_exists("visitTimes", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("visitTimes", $this->stdResult)) {
             $this->visitTimes = $this->stdResult->{"visitTimes"};
         }
     }
@@ -137,19 +137,19 @@ class UmengUminiVisitPageDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("displayName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("displayName", $this->arrayResult)) {
             $this->displayName = $arrayResult['displayName'];
         }
-        if (is_array_key_exists("pageDuration", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("pageDuration", $this->arrayResult)) {
             $this->pageDuration = $arrayResult['pageDuration'];
         }
-        if (is_array_key_exists("page", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->arrayResult)) {
             $this->page = $arrayResult['page'];
         }
-        if (is_array_key_exists("visitUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("visitUser", $this->arrayResult)) {
             $this->visitUser = $arrayResult['visitUser'];
         }
-        if (is_array_key_exists("visitTimes", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("visitTimes", $this->arrayResult)) {
             $this->visitTimes = $arrayResult['visitTimes'];
         }
     }

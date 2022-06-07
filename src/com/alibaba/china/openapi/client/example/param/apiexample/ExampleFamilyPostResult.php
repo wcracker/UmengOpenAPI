@@ -53,12 +53,12 @@ class ExampleFamilyPostResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("result", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("result", $this->stdResult)) {
             $resultResult = $this->stdResult->{"result"};
             $this->result = new ExampleFamily();
             $this->result->setStdResult($resultResult);
         }
-        if (is_array_key_exists("resultDesc", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("resultDesc", $this->stdResult)) {
             $this->resultDesc = $this->stdResult->{"resultDesc"};
         }
     }
@@ -66,12 +66,12 @@ class ExampleFamilyPostResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("result", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("result", $this->arrayResult)) {
             $resultResult = $arrayResult ['result'];
             $this->result = new ExampleFamily();
             $this->result->$this->setStdResult($resultResult);
         }
-        if (is_array_key_exists("resultDesc", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("resultDesc", $this->arrayResult)) {
             $this->resultDesc = $arrayResult ['resultDesc'];
         }
     }

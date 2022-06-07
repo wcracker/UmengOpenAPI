@@ -32,7 +32,7 @@ class UmengApptrackBackReportDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("result", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("result", $this->stdResult)) {
             $this->result = $this->stdResult->{"result"};
         }
     }
@@ -41,7 +41,7 @@ class UmengApptrackBackReportDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("result", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("result", $this->arrayResult)) {
             $this->result = $arrayResult['result'];
         }
     }

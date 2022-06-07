@@ -34,7 +34,7 @@ class UmengUappEventParamListResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("paramInfos", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("paramInfos", $this->stdResult)) {
             $paramInfosResult=$this->stdResult->{"paramInfos"};
             $object = json_decode(json_encode($paramInfosResult), true);
             $this->paramInfos = array();
@@ -51,7 +51,7 @@ class UmengUappEventParamListResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("paramInfos", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("paramInfos", $this->arrayResult)) {
             $paramInfosResult=$arrayResult['paramInfos'];
             $this->paramInfos = new UmengUappParamInfo();
             $this->paramInfos->setStdResult($paramInfosResult);

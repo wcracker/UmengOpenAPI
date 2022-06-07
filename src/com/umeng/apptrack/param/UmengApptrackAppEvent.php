@@ -53,10 +53,10 @@ class UmengApptrackAppEvent extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("eventName", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventName", $this->stdResult)) {
             $this->eventName = $this->stdResult->{"eventName"};
         }
-        if (is_array_key_exists("eventNumber", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventNumber", $this->stdResult)) {
             $this->eventNumber = $this->stdResult->{"eventNumber"};
         }
     }
@@ -65,10 +65,10 @@ class UmengApptrackAppEvent extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("eventName", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventName", $this->arrayResult)) {
             $this->eventName = $arrayResult['eventName'];
         }
-        if (is_array_key_exists("eventNumber", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventNumber", $this->arrayResult)) {
             $this->eventNumber = $arrayResult['eventNumber'];
         }
     }

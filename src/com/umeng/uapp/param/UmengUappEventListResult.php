@@ -75,7 +75,7 @@ class UmengUappEventListResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("eventInfo", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventInfo", $this->stdResult)) {
             $eventInfoResult=$this->stdResult->{"eventInfo"};
             $object = json_decode(json_encode($eventInfoResult), true);
             $this->eventInfo = array();
@@ -86,10 +86,10 @@ class UmengUappEventListResult
                 $this->eventInfo [$i] = $UmengUappEventInfoResult;
             }
         }
-        if (is_array_key_exists("page", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->stdResult)) {
             $this->page = $this->stdResult->{"page"};
         }
-        if (is_array_key_exists("totalPage", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalPage", $this->stdResult)) {
             $this->totalPage = $this->stdResult->{"totalPage"};
         }
     }
@@ -98,15 +98,15 @@ class UmengUappEventListResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("eventInfo", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventInfo", $this->arrayResult)) {
             $eventInfoResult=$arrayResult['eventInfo'];
             $this->eventInfo = new UmengUappEventInfo();
             $this->eventInfo->setStdResult($eventInfoResult);
         }
-        if (is_array_key_exists("page", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("page", $this->arrayResult)) {
             $this->page = $arrayResult['page'];
         }
-        if (is_array_key_exists("totalPage", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalPage", $this->arrayResult)) {
             $this->totalPage = $arrayResult['totalPage'];
         }
     }

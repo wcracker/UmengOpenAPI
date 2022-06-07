@@ -95,16 +95,16 @@ class UmengApptrackGetRegisterAnalysis extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("registerId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("registerId", $this->stdResult)) {
             $this->registerId = $this->stdResult->{"registerId"};
         }
-        if (is_array_key_exists("eventDs", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventDs", $this->stdResult)) {
             $this->eventDs = $this->stdResult->{"eventDs"};
         }
-        if (is_array_key_exists("activateDs", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateDs", $this->stdResult)) {
             $this->activateDs = $this->stdResult->{"activateDs"};
         }
-        if (is_array_key_exists("clickDs", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickDs", $this->stdResult)) {
             $this->clickDs = $this->stdResult->{"clickDs"};
         }
     }
@@ -113,16 +113,16 @@ class UmengApptrackGetRegisterAnalysis extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("registerId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("registerId", $this->arrayResult)) {
             $this->registerId = $arrayResult['registerId'];
         }
-        if (is_array_key_exists("eventDs", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventDs", $this->arrayResult)) {
             $this->eventDs = $arrayResult['eventDs'];
         }
-        if (is_array_key_exists("activateDs", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateDs", $this->arrayResult)) {
             $this->activateDs = $arrayResult['activateDs'];
         }
-        if (is_array_key_exists("clickDs", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickDs", $this->arrayResult)) {
             $this->clickDs = $arrayResult['clickDs'];
         }
     }

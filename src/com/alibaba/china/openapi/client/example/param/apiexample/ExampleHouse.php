@@ -102,16 +102,16 @@ class ExampleHouse extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("location", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("location", $this->stdResult)) {
             $this->location = $this->stdResult->{"location"};
         }
-        if (is_array_key_exists("areaSize", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("areaSize", $this->stdResult)) {
             $this->areaSize = $this->stdResult->{"areaSize"};
         }
-        if (is_array_key_exists("rent", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("rent", $this->stdResult)) {
             $this->rent = $this->stdResult->{"rent"};
         }
-        if (is_array_key_exists("rooms", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("rooms", $this->stdResult)) {
             $this->rooms = $this->stdResult->{"rooms"};
         }
     }
@@ -119,16 +119,16 @@ class ExampleHouse extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("location", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("location", $this->arrayResult)) {
             $this->location = $arrayResult ['location'];
         }
-        if (is_array_key_exists("areaSize", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("areaSize", $this->arrayResult)) {
             $this->areaSize = $arrayResult ['areaSize'];
         }
-        if (is_array_key_exists("rent", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("rent", $this->arrayResult)) {
             $this->rent = $arrayResult ['rent'];
         }
-        if (is_array_key_exists("rooms", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("rooms", $this->arrayResult)) {
             $this->rooms = $arrayResult ['rooms'];
         }
     }

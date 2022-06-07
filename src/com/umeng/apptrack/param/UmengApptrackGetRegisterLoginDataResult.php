@@ -158,25 +158,25 @@ class UmengApptrackGetRegisterLoginDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("register", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("register", $this->stdResult)) {
             $this->register = $this->stdResult->{"register"};
         }
-        if (is_array_key_exists("login", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("login", $this->stdResult)) {
             $this->login = $this->stdResult->{"login"};
         }
-        if (is_array_key_exists("roleDevice", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("roleDevice", $this->stdResult)) {
             $this->roleDevice = $this->stdResult->{"roleDevice"};
         }
-        if (is_array_key_exists("orderDevice", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderDevice", $this->stdResult)) {
             $this->orderDevice = $this->stdResult->{"orderDevice"};
         }
-        if (is_array_key_exists("orderAmount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderAmount", $this->stdResult)) {
             $this->orderAmount = $this->stdResult->{"orderAmount"};
         }
-        if (is_array_key_exists("payDevice", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payDevice", $this->stdResult)) {
             $this->payDevice = $this->stdResult->{"payDevice"};
         }
-        if (is_array_key_exists("amount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("amount", $this->stdResult)) {
             $this->amount = $this->stdResult->{"amount"};
         }
     }
@@ -185,25 +185,25 @@ class UmengApptrackGetRegisterLoginDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("register", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("register", $this->arrayResult)) {
             $this->register = $arrayResult['register'];
         }
-        if (is_array_key_exists("login", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("login", $this->arrayResult)) {
             $this->login = $arrayResult['login'];
         }
-        if (is_array_key_exists("roleDevice", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("roleDevice", $this->arrayResult)) {
             $this->roleDevice = $arrayResult['roleDevice'];
         }
-        if (is_array_key_exists("orderDevice", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderDevice", $this->arrayResult)) {
             $this->orderDevice = $arrayResult['orderDevice'];
         }
-        if (is_array_key_exists("orderAmount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderAmount", $this->arrayResult)) {
             $this->orderAmount = $arrayResult['orderAmount'];
         }
-        if (is_array_key_exists("payDevice", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payDevice", $this->arrayResult)) {
             $this->payDevice = $arrayResult['payDevice'];
         }
-        if (is_array_key_exists("amount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("amount", $this->arrayResult)) {
             $this->amount = $arrayResult['amount'];
         }
     }

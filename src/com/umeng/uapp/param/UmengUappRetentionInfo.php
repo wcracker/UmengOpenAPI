@@ -74,13 +74,13 @@ class UmengUappRetentionInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("date", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->stdResult)) {
             $this->date = $this->stdResult->{"date"};
         }
-        if (is_array_key_exists("totalInstallUser", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalInstallUser", $this->stdResult)) {
             $this->totalInstallUser = $this->stdResult->{"totalInstallUser"};
         }
-        if (is_array_key_exists("retentionRate", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("retentionRate", $this->stdResult)) {
             $this->retentionRate = $this->stdResult->{"retentionRate"};
         }
     }
@@ -89,13 +89,13 @@ class UmengUappRetentionInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("date", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("date", $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (is_array_key_exists("totalInstallUser", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("totalInstallUser", $this->arrayResult)) {
             $this->totalInstallUser = $arrayResult['totalInstallUser'];
         }
-        if (is_array_key_exists("retentionRate", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("retentionRate", $this->arrayResult)) {
             $this->retentionRate = $arrayResult['retentionRate'];
         }
     }

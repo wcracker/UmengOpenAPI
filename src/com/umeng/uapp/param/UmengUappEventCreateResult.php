@@ -53,10 +53,10 @@ class UmengUappEventCreateResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("status", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("status", $this->stdResult)) {
             $this->status = $this->stdResult->{"status"};
         }
-        if (is_array_key_exists("msg", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("msg", $this->stdResult)) {
             $this->msg = $this->stdResult->{"msg"};
         }
     }
@@ -65,10 +65,10 @@ class UmengUappEventCreateResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("status", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("status", $this->arrayResult)) {
             $this->status = $arrayResult['status'];
         }
-        if (is_array_key_exists("msg", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("msg", $this->arrayResult)) {
             $this->msg = $arrayResult['msg'];
         }
     }

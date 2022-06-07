@@ -158,25 +158,25 @@ class UmengApptrackGetPayAnalysis extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (is_array_key_exists("payId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payId", $this->stdResult)) {
             $this->payId = $this->stdResult->{"payId"};
         }
-        if (is_array_key_exists("payItem", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payItem", $this->stdResult)) {
             $this->payItem = $this->stdResult->{"payItem"};
         }
-        if (is_array_key_exists("orderId", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderId", $this->stdResult)) {
             $this->orderId = $this->stdResult->{"orderId"};
         }
-        if (is_array_key_exists("amount", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("amount", $this->stdResult)) {
             $this->amount = $this->stdResult->{"amount"};
         }
-        if (is_array_key_exists("activateDs", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateDs", $this->stdResult)) {
             $this->activateDs = $this->stdResult->{"activateDs"};
         }
-        if (is_array_key_exists("eventDs", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventDs", $this->stdResult)) {
             $this->eventDs = $this->stdResult->{"eventDs"};
         }
-        if (is_array_key_exists("clickDs", $this->stdResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickDs", $this->stdResult)) {
             $this->clickDs = $this->stdResult->{"clickDs"};
         }
     }
@@ -185,25 +185,25 @@ class UmengApptrackGetPayAnalysis extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (is_array_key_exists("payId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payId", $this->arrayResult)) {
             $this->payId = $arrayResult['payId'];
         }
-        if (is_array_key_exists("payItem", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("payItem", $this->arrayResult)) {
             $this->payItem = $arrayResult['payItem'];
         }
-        if (is_array_key_exists("orderId", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("orderId", $this->arrayResult)) {
             $this->orderId = $arrayResult['orderId'];
         }
-        if (is_array_key_exists("amount", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("amount", $this->arrayResult)) {
             $this->amount = $arrayResult['amount'];
         }
-        if (is_array_key_exists("activateDs", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("activateDs", $this->arrayResult)) {
             $this->activateDs = $arrayResult['activateDs'];
         }
-        if (is_array_key_exists("eventDs", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("eventDs", $this->arrayResult)) {
             $this->eventDs = $arrayResult['eventDs'];
         }
-        if (is_array_key_exists("clickDs", $this->arrayResult)) {
+        if ((new \Wcracker\UmengOpenAPI\Common)->is_array_key_exists("clickDs", $this->arrayResult)) {
             $this->clickDs = $arrayResult['clickDs'];
         }
     }
